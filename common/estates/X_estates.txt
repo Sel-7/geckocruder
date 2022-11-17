@@ -1,0 +1,34 @@
+x_rus_estate_streltsy = {
+	icon = 7
+	color = { 150 000 000 }
+	trigger = {
+		has_government_mechanic = russian_mechanic
+	}
+	country_modifier_happy = {
+		infantry_cost = -0.10
+		army_tradition_decay = -0.005
+	}
+	country_modifier_neutral = {
+		army_tradition_decay = -0.005
+	}
+	country_modifier_angry = {
+		infantry_cost = 0.10
+		army_tradition_decay = 0.005
+		global_unrest = 2
+	}
+	land_ownership_modifier = {
+		X_RUS_estate_streltsy_loyalty_modifier = 0.2
+	}
+	base_influence = 10
+	influence_from_dev_modifier = 1.0
+	privileges = {
+		X_RUS_estate_streltsy_privilege_6
+		X_RUS_estate_streltsy_privilege_1
+		X_RUS_estate_streltsy_privilege_7
+		X_RUS_estate_streltsy_privilege_2
+		X_RUS_estate_streltsy_privilege_3
+		X_RUS_estate_streltsy_privilege_4
+		X_RUS_estate_streltsy_privilege_5
+		X_RUS_estate_streltsy_privilege_8
+	}
+}

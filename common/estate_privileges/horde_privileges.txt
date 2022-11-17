@@ -1,0 +1,116 @@
+estate_nomadic_tribes_tribal_host = {
+	icon = privilege_raise_host
+	max_absolutism = -10
+	loyalty = 0.1
+	influence = 0.1
+	can_select = {
+	}
+	benefits = {
+		manpower_in_own_culture_provinces = 0.1
+		manpower_in_accepted_culture_provinces = 0.1
+		manpower_in_culture_group_provinces = 0.1
+	}
+	modifier_by_land_ownership = {
+		cavalry_cost = -0.20
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0.5
+			is_absolutism_active = yes
+		}
+	}
+}
+
+#estate_nomadic_tribes_tribute = {
+#	icon = privilege_lighten_dhimmi_tax_burden
+#	max_absolutism = -10
+#	loyalty = 0.1
+#	influence = 0.1
+#	can_select = {
+#	}
+#	benefits = {
+#	
+#	}
+#	modifier_by_land_ownership = {
+#		global_tax_modifier = 0.5
+#	}
+#	ai_will_do = {
+#		factor = 10
+#		modifier = {
+#			factor = 0.5
+#			is_absolutism_active = yes
+#		}
+#	}
+#}
+
+estate_nomadic_tribes_share_of_the_spoils = {
+	icon = privilege_supply_arms
+	max_absolutism = -10
+	land_share = 5
+	loyalty = -0.10
+	influence = 0.1
+	can_select = {
+
+	}
+	benefits = {
+		
+	}
+	modifier_by_land_ownership = {
+	
+	}
+	on_granted = {
+		custom_tooltip = estate_nomadic_tribes_steppes_devcost_grant_tooltip
+	
+		hidden_effect = {
+			every_owned_province = { 
+				limit = {
+					has_terrain = steppe
+				}
+				
+				add_province_modifier = {
+					name = estate_nomadic_tribes_steppes_devcost
+					duration = -1
+				}
+			}
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_nomadic_tribes_steppes_devcost_revoke_tooltip
+	
+		hidden_effect = {
+			every_owned_province = { 
+				limit = {
+					has_province_modifier = estate_nomadic_tribes_steppes_devcost
+				}
+
+				remove_province_modifier = estate_nomadic_tribes_steppes_devcost
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+###X###
+estate_nomadic_tribes_land_rights = {
+	icon = privilege_grant_autonomy
+	land_share = 5
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	can_select = {
+	}
+	on_granted = {
+	}
+	penalties = {
+	}
+	benefits = {
+		governing_capacity = 100
+	}
+	ai_will_do = {
+		factor = 5
+	}
+}
+#######

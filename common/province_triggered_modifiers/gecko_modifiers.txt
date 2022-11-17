@@ -1,0 +1,301 @@
+transcaucasian_wine_valleys = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		controlled_by = ROOT
+	}
+
+	trade_goods_size= 1
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+kaffa_slave_market = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+			###X###
+			is_emperor_of_china = yes
+			#######
+		}
+		controlled_by = ROOT
+	}
+
+	trade_goods_size= 5
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+the_upper_nile = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		controlled_by = ROOT
+	}
+
+	trade_goods_size= 1
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+
+conquest_of_jerusalem = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+			OR = {
+				religion = catholic
+				religion = anglican
+				religion = protestant
+				religion = hussite
+				religion = reformed
+				religion = coptic
+				religion = orthodox
+				religion = sunni
+				religion = shiite
+				religion = ibadi
+			}
+		}
+		controlled_by = ROOT
+	}
+
+	missionaries = 1
+ 
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}	
+
+
+
+caliph_of_cairo = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+			OR = {
+				religion = sunni
+				religion = shiite
+				religion = ibadi
+			}
+		}	
+		controlled_by = ROOT	
+		}	
+
+	land_morale = 0.025
+	years_of_nationalism = -5
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+the_motherland_calls = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+			OR = {
+				  tag = MOS 
+				  tag = RUS 
+			}
+		}
+		controlled_by = ROOT	
+	}	
+
+	land_morale = 0.05
+	stability_cost_modifier = -0.10
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+#conquest_of_isfahan = {
+#	potential = {
+#		normal_or_historical_nations = yes
+#	}
+#
+#	trigger = {
+#		owner = {
+#		}
+#		controlled_by = ROOT	
+#	}	
+#	
+#	
+#	trade_goods_size = 5
+#	development_cost = -0.05
+#	
+#	#Province scope
+#	on_activation = {
+#	
+#	}
+#	
+#	on_deactivation = {
+#	
+#	}
+#}	
+
+my_desert = {
+	potential = {
+			normal_or_historical_nations = yes
+		}
+
+		trigger = {
+			controlled_by = ROOT
+		}
+
+		trade_goods_size= 1
+		
+		#Province scope
+		on_activation = {
+		
+		}
+		
+		on_deactivation = {
+		
+		}
+}	
+
+#gc_mongol_kurultai = {
+#	potential = {
+#		normal_or_historical_nations = yes
+#		has_global_flag = gc_mongol_kurultai
+#	}
+#	trigger = {
+#		owner = {
+#			OR = {
+#				culture_group = altaic
+#				culture_group = tartar
+#			}
+#		}
+#		controlled_by = ROOT
+#	}
+#	
+#	#technology_cost = -0.05
+#	trade_goods_size = 5
+#}
+
+#gc_cagliari_copper = {
+#	potential = {
+#		normal_or_historical_nations = yes
+#		always = no
+#	}
+#	trigger = {
+#		controlled_by = ROOT
+#		owner = {
+#			has_global_flag = gc_cagliari_copper
+#		}
+#	}
+#	trade_goods_size = 3
+#	local_development_cost = -0.25
+#}
+
+#erzincan_copper = {
+#	potential = {
+#		normal_or_historical_nations = yes	
+#	}
+#	trigger = {
+#		controlled_by = ROOT
+#		owner = {
+#			OR = {
+#				tag = AKK
+#				mission_completed = conquer_kurdistan
+#			}	
+#		}
+#	}
+#	trade_goods_size = 3
+#	local_development_cost = -0.25
+#}
+
+#gc_catanzaro_silk = {
+#	potential = {
+#		normal_or_historical_nations = yes
+#		always = no
+#	}
+#	trigger = {
+#		owner = {
+#			has_global_flag = gc_catanzaro_silk
+#		}
+#		controlled_by = ROOT
+#	}
+#	trade_goods_size = 3
+#	local_development_cost = -0.10
+#}
+
+#conquest_of_amsterdam = {
+#	potential = {
+#		normal_or_historical_nations = yes
+#	}
+#
+#	trigger = {
+#		controlled_by = ROOT
+#	}
+#
+#
+#	global_trade_power = 0.1
+#	trade_efficiency = 0.1
+#	
+#	#Province scope
+#	on_activation = {
+#	
+#	}
+#	
+#	on_deactivation = {
+#	
+#	}
+#}

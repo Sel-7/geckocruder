@@ -1,0 +1,25 @@
+namespace = gecko_crimea_mission
+
+country_event = {
+	id = gecko_crimea_mission.1
+	title = "gecko_crimea_mission.1.t"
+	desc = "gecko_crimea_mission.1.d"
+	picture = 3_Rajput_Estate__eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = gecko_crimea_mission.1.a
+		
+		capital_scope = {
+			add_base_tax = 4
+			add_base_production = 4
+			add_base_manpower = 4
+		}
+		add_treasury = 500
+		change_adm = 1
+		change_dip = 1
+		change_mil = 1
+	}
+}

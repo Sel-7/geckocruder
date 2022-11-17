@@ -1,0 +1,539 @@
+####################
+# General
+####################
+X_is_colonial_province_trigger = {
+	OR = {
+		colonial_region = colonial_alaska
+		colonial_region = colonial_canada
+		colonial_region = colonial_eastern_america
+		colonial_region = colonial_california
+		colonial_region = colonial_mexico
+		colonial_region = colonial_the_carribean
+		colonial_region = colonial_colombia
+		colonial_region = colonial_peru
+		colonial_region = colonial_la_plata
+		colonial_region = colonial_brazil
+		colonial_region = colonial_australia
+	}
+}
+
+X_has_latest_building_trigger = {
+	[[trade]
+		if = {
+			limit = { $builder$ = { dip_tech = 22 } }
+			has_building = stock_exchange
+		}
+		else_if = {
+			limit = { $builder$ = { dip_tech = 17 } }
+			has_building = trade_depot
+		}
+		else = {
+			has_building = marketplace
+		}
+	]
+	[[government]
+		if = {
+			limit = { $builder$ = { adm_tech = 22 } }
+			has_building = town_hall
+		}
+		else = {
+			has_building = courthouse
+		}
+	]
+	[[production]
+		if = {
+			limit = { $builder$ = { adm_tech = 24 } }
+			has_building = counting_house
+		}
+		else = {
+			has_building = workshop
+		}
+	]
+	[[tax]
+		if = {
+			limit = { $builder$ = { adm_tech = 19 } }
+			has_building = cathedral
+		}
+		else = {
+			has_building = temple
+		}
+	]
+	[[manpower]
+		if = {
+			limit = { $builder$ = { mil_tech = 16 } }
+			has_building = training_fields
+		}
+		else = {
+			has_building = barracks
+		}
+	]
+	[[sailors]
+		if = {
+			limit = { $builder$ = { dip_tech = 19 } }
+			has_building = drydock
+		}
+		else = {
+			has_building = dock
+		}
+	]
+	[[army_forcelimit]
+		if = {
+			limit = { $builder$ = { mil_tech = 18 } }
+			has_building = conscription_center
+		}
+		else = {
+			has_building = regimental_camp
+		}
+	]
+	[[navy_forcelimit]
+		has_building = shipyard
+	]
+	[[coastal]
+		if = {
+			limit = { $builder$ = { dip_tech = 12 } }
+			has_building = naval_battery
+		}
+		else = {
+			has_building = coastal_defence
+		}
+	]
+	[[fort]
+		if = {
+			limit = { $builder$ = { mil_tech = 24 } }
+			has_building = fort_18th
+		}
+		else_if = {
+			limit = { $builder$ = { mil_tech = 19 } }
+			has_building = fort_17th
+		}
+		else_if = {
+			limit = { $builder$ = { mil_tech = 14 } }
+			has_building = fort_16th
+		}
+		else = {
+			has_building = fort_15th
+		}
+	]
+}
+
+X_flatland_terrain_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = X_flatland_terrain_trigger_tt
+		OR = {
+			has_terrain = farmlands
+			has_terrain = desert
+			has_terrain = grasslands
+			has_terrain = drylands
+			has_terrain = savannah
+			has_terrain = steppe
+			has_terrain = Oasis
+			has_terrain = coastline
+		}
+	}
+}
+####################
+# Russia
+####################
+X_RUS_has_isolation_vs_westernization_modifier_trigger = {
+	$who$ = {
+		OR = {
+			has_country_modifier = X_RUS_isolation_1_cmod
+			has_country_modifier = X_RUS_isolation_2_cmod
+			has_country_modifier = X_RUS_isolation_3_cmod
+			has_country_modifier = X_RUS_isolation_4_cmod
+			has_country_modifier = X_RUS_westernization_1_cmod
+			has_country_modifier = X_RUS_westernization_2_cmod
+			has_country_modifier = X_RUS_westernization_3_cmod
+			has_country_modifier = X_RUS_westernization_4_cmod
+		}
+	}
+}
+####################
+# Cultural Unions
+####################
+X_culture_union_trigger = {
+	#tartar
+	[[astrakhani] owns_all_provinces = { X_is_colonial_province_trigger = no culture = astrakhani } any_province = { X_is_colonial_province_trigger = no culture = astrakhani } ]
+	[[uzbehk] owns_all_provinces = { X_is_colonial_province_trigger = no culture = uzbehk } any_province = { X_is_colonial_province_trigger = no culture = uzbehk } ]
+	[[ostyaki] owns_all_provinces = { X_is_colonial_province_trigger = no culture = ostyaki } any_province = { X_is_colonial_province_trigger = no culture = ostyaki } ]
+	[[turkmeni] owns_all_provinces = { X_is_colonial_province_trigger = no culture = turkmeni } any_province = { X_is_colonial_province_trigger = no culture = turkmeni } ]
+	[[bashkir] owns_all_provinces = { X_is_colonial_province_trigger = no culture = bashkir } any_province = { X_is_colonial_province_trigger = no culture = bashkir } ]
+	[[khazak] owns_all_provinces = { X_is_colonial_province_trigger = no culture = khazak } any_province = { X_is_colonial_province_trigger = no culture = khazak } ]
+	[[kirgiz] owns_all_provinces = { X_is_colonial_province_trigger = no culture = kirgiz } any_province = { X_is_colonial_province_trigger = no culture = kirgiz } ]
+	[[circassian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = circassian } any_province = { X_is_colonial_province_trigger = no culture = circassian } ]
+	[[dagestani] owns_all_provinces = { X_is_colonial_province_trigger = no culture = dagestani } any_province = { X_is_colonial_province_trigger = no culture = dagestani } ]
+	[[crimean] owns_all_provinces = { X_is_colonial_province_trigger = no culture = crimean } any_province = { X_is_colonial_province_trigger = no culture = crimean } ]
+	[[kazani] owns_all_provinces = { X_is_colonial_province_trigger = no culture = kazani } any_province = { X_is_colonial_province_trigger = no culture = kazani } ]
+	[[chuvash] owns_all_provinces = { X_is_colonial_province_trigger = no culture = chuvash } any_province = { X_is_colonial_province_trigger = no culture = chuvash } ]
+	[[mishary] owns_all_provinces = { X_is_colonial_province_trigger = no culture = mishary } any_province = { X_is_colonial_province_trigger = no culture = mishary } ]
+	[[nogaybak] owns_all_provinces = { X_is_colonial_province_trigger = no culture = nogaybak } any_province = { X_is_colonial_province_trigger = no culture = nogaybak } ]
+	[[siberian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = siberian } any_province = { X_is_colonial_province_trigger = no culture = siberian } ]	
+	#germanic
+	[[pommeranian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = pommeranian } any_province = { X_is_colonial_province_trigger = no culture = pommeranian } ]
+	[[prussian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = prussian } any_province = { X_is_colonial_province_trigger = no culture = prussian } ]
+	[[baltic_german] owns_all_provinces = { X_is_colonial_province_trigger = no culture = baltic_german } any_province = { X_is_colonial_province_trigger = no culture = baltic_german } ]
+	[[lower_saxon] owns_all_provinces = { X_is_colonial_province_trigger = no culture = lower_saxon } any_province = { X_is_colonial_province_trigger = no culture = lower_saxon } ]
+	[[hannoverian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = hannoverian } any_province = { X_is_colonial_province_trigger = no culture = hannoverian } ]
+	[[hessian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = hessian } any_province = { X_is_colonial_province_trigger = no culture = hessian } ]
+	[[saxon] owns_all_provinces = { X_is_colonial_province_trigger = no culture = saxon } any_province = { X_is_colonial_province_trigger = no culture = saxon } ]
+	[[franconian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = franconian } any_province = { X_is_colonial_province_trigger = no culture = franconian } ]
+	[[swabian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = swabian } any_province = { X_is_colonial_province_trigger = no culture = swabian } ]
+	[[swiss] owns_all_provinces = { X_is_colonial_province_trigger = no culture = swiss } any_province = { X_is_colonial_province_trigger = no culture = swiss } ]
+	[[bavarian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = bavarian } any_province = { X_is_colonial_province_trigger = no culture = bavarian } ]
+	[[austrian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = austrian } any_province = { X_is_colonial_province_trigger = no culture = austrian } ]
+	[[frisian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = frisian } any_province = { X_is_colonial_province_trigger = no culture = frisian } ]
+	#latin
+	[[lombard] owns_all_provinces = { X_is_colonial_province_trigger = no culture = lombard } any_province = { X_is_colonial_province_trigger = no culture = lombard } ]
+	[[tuscan] owns_all_provinces = { X_is_colonial_province_trigger = no culture = tuscan } any_province = { X_is_colonial_province_trigger = no culture = tuscan } ]
+	[[sardinian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = sardinian } any_province = { X_is_colonial_province_trigger = no culture = sardinian } ]
+	[[romagnan] owns_all_provinces = { X_is_colonial_province_trigger = no culture = romagnan } any_province = { X_is_colonial_province_trigger = no culture = romagnan } ]
+	[[ligurian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = ligurian } any_province = { X_is_colonial_province_trigger = no culture = ligurian } ]
+	[[venetian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = venetian } any_province = { X_is_colonial_province_trigger = no culture = venetian } ]
+	[[dalmatian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = dalmatian } any_province = { X_is_colonial_province_trigger = no culture = dalmatian } ]
+	[[neapolitan] owns_all_provinces = { X_is_colonial_province_trigger = no culture = neapolitan } any_province = { X_is_colonial_province_trigger = no culture = neapolitan } ]
+	[[piedmontese] owns_all_provinces = { X_is_colonial_province_trigger = no culture = piedmontese } any_province = { X_is_colonial_province_trigger = no culture = piedmontese } ]
+	[[umbrian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = umbrian } any_province = { X_is_colonial_province_trigger = no culture = umbrian } ]
+	[[sicilian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = sicilian } any_province = { X_is_colonial_province_trigger = no culture = sicilian } ]
+	[[maltese] owns_all_provinces = { X_is_colonial_province_trigger = no culture = maltese } any_province = { X_is_colonial_province_trigger = no culture = maltese } ]
+	#west_slavic
+	[[czech] owns_all_provinces = { X_is_colonial_province_trigger = no culture = czech } any_province = { X_is_colonial_province_trigger = no culture = czech } ]
+	[[polish] owns_all_provinces = { X_is_colonial_province_trigger = no culture = polish } any_province = { X_is_colonial_province_trigger = no culture = polish } ]
+	[[schlesian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = schlesian } any_province = { X_is_colonial_province_trigger = no culture = schlesian } ]
+	[[sorbian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = sorbian } any_province = { X_is_colonial_province_trigger = no culture = sorbian } ]
+	[[slovak] owns_all_provinces = { X_is_colonial_province_trigger = no culture = slovak } any_province = { X_is_colonial_province_trigger = no culture = slovak } ]
+	[[lithuanian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = lithuanian } any_province = { X_is_colonial_province_trigger = no culture = lithuanian } ]
+	#east_slavic
+	[[russian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = russian } any_province = { X_is_colonial_province_trigger = no culture = russian } ]
+	[[novgorodian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = novgorodian } any_province = { X_is_colonial_province_trigger = no culture = novgorodian } ]
+	[[ryazanian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = ryazanian } any_province = { X_is_colonial_province_trigger = no culture = ryazanian } ]
+	[[byelorussian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = byelorussian } any_province = { X_is_colonial_province_trigger = no culture = byelorussian } ]
+	[[ruthenian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = ruthenian } any_province = { X_is_colonial_province_trigger = no culture = ruthenian } ]
+	[[karelian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = karelian } any_province = { X_is_colonial_province_trigger = no culture = karelian } ]
+	#scandinavian
+	[[swedish] owns_all_provinces = { X_is_colonial_province_trigger = no culture = swedish } any_province = { X_is_colonial_province_trigger = no culture = swedish } ]
+	[[danish] owns_all_provinces = { X_is_colonial_province_trigger = no culture = danish } any_province = { X_is_colonial_province_trigger = no culture = danish } ]
+	[[norwegian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = norwegian } any_province = { X_is_colonial_province_trigger = no culture = norwegian } ]
+	[[finnish] owns_all_provinces = { X_is_colonial_province_trigger = no culture = finnish } any_province = { X_is_colonial_province_trigger = no culture = finnish } ]
+	[[sapmi] owns_all_provinces = { X_is_colonial_province_trigger = no culture = sapmi } any_province = { X_is_colonial_province_trigger = no culture = sapmi } ]
+	[[icelandic] owns_all_provinces = { X_is_colonial_province_trigger = no culture = icelandic } any_province = { X_is_colonial_province_trigger = no culture = icelandic } ]
+	[[estonian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = estonian } any_province = { X_is_colonial_province_trigger = no culture = estonian } ]
+	[[latvian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = latvian } any_province = { X_is_colonial_province_trigger = no culture = latvian } ]
+	#carpathian
+	[[transylvanian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = transylvanian } any_province = { X_is_colonial_province_trigger = no culture = transylvanian } ]
+	[[romanian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = romanian } any_province = { X_is_colonial_province_trigger = no culture = romanian } ]
+	[[hungarian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = hungarian } any_province = { X_is_colonial_province_trigger = no culture = hungarian } ]
+	[[croatian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = croatian } any_province = { X_is_colonial_province_trigger = no culture = croatian } ]
+	[[serbian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = serbian } any_province = { X_is_colonial_province_trigger = no culture = serbian } ]
+	[[slovene] owns_all_provinces = { X_is_colonial_province_trigger = no culture = slovene } any_province = { X_is_colonial_province_trigger = no culture = slovene } ]
+	[[bosnian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = bosnian } any_province = { X_is_colonial_province_trigger = no culture = bosnian } ]
+	[[bulgarian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = bulgarian } any_province = { X_is_colonial_province_trigger = no culture = bulgarian } ]
+	[[albanian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = albanian } any_province = { X_is_colonial_province_trigger = no culture = albanian } ]
+	[[greek] owns_all_provinces = { X_is_colonial_province_trigger = no culture = greek } any_province = { X_is_colonial_province_trigger = no culture = greek } ]
+	[[pontic_greek] owns_all_provinces = { X_is_colonial_province_trigger = no culture = pontic_greek } any_province = { X_is_colonial_province_trigger = no culture = pontic_greek } ]
+	[[goths] owns_all_provinces = { X_is_colonial_province_trigger = no culture = goths } any_province = { X_is_colonial_province_trigger = no culture = goths } ]
+	#iberian
+	[[castillian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = castillian } any_province = { X_is_colonial_province_trigger = no culture = castillian } ]
+	[[mexican] owns_all_provinces = { X_is_colonial_province_trigger = no culture = mexican } any_province = { X_is_colonial_province_trigger = no culture = mexican } ]
+	[[platinean] owns_all_provinces = { X_is_colonial_province_trigger = no culture = platinean } any_province = { X_is_colonial_province_trigger = no culture = platinean } ]
+	[[leonese] owns_all_provinces = { X_is_colonial_province_trigger = no culture = leonese } any_province = { X_is_colonial_province_trigger = no culture = leonese } ]
+	[[aragonese] owns_all_provinces = { X_is_colonial_province_trigger = no culture = aragonese } any_province = { X_is_colonial_province_trigger = no culture = aragonese } ]
+	[[catalan] owns_all_provinces = { X_is_colonial_province_trigger = no culture = catalan } any_province = { X_is_colonial_province_trigger = no culture = catalan } ]
+	[[galician] owns_all_provinces = { X_is_colonial_province_trigger = no culture = galician } any_province = { X_is_colonial_province_trigger = no culture = galician } ]
+	[[andalucian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = andalucian } any_province = { X_is_colonial_province_trigger = no culture = andalucian } ]
+	[[portugese] owns_all_provinces = { X_is_colonial_province_trigger = no culture = portugese } any_province = { X_is_colonial_province_trigger = no culture = portugese } ]
+	[[brazilian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = brazilian } any_province = { X_is_colonial_province_trigger = no culture = brazilian } ]
+	[[basque] owns_all_provinces = { X_is_colonial_province_trigger = no culture = basque } any_province = { X_is_colonial_province_trigger = no culture = basque } ]
+	#maghrebi
+	[[moroccan] owns_all_provinces = { X_is_colonial_province_trigger = no culture = moroccan } any_province = { X_is_colonial_province_trigger = no culture = moroccan } ]
+	[[tunisian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = tunisian } any_province = { X_is_colonial_province_trigger = no culture = tunisian } ]
+	[[algerian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = algerian } any_province = { X_is_colonial_province_trigger = no culture = algerian } ]
+	[[berber] owns_all_provinces = { X_is_colonial_province_trigger = no culture = berber } any_province = { X_is_colonial_province_trigger = no culture = berber } ]
+	[[tuareg] owns_all_provinces = { X_is_colonial_province_trigger = no culture = tuareg } any_province = { X_is_colonial_province_trigger = no culture = tuareg } ]
+	#french
+	[[cosmopolitan_french] owns_all_provinces = { X_is_colonial_province_trigger = no culture = cosmopolitan_french } any_province = { X_is_colonial_province_trigger = no culture = cosmopolitan_french } ]
+	[[gascon] owns_all_provinces = { X_is_colonial_province_trigger = no culture = gascon } any_province = { X_is_colonial_province_trigger = no culture = gascon } ]
+	[[normand] owns_all_provinces = { X_is_colonial_province_trigger = no culture = normand } any_province = { X_is_colonial_province_trigger = no culture = normand } ]
+	[[aquitaine] owns_all_provinces = { X_is_colonial_province_trigger = no culture = aquitaine } any_province = { X_is_colonial_province_trigger = no culture = aquitaine } ]
+	[[burgundian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = burgundian } any_province = { X_is_colonial_province_trigger = no culture = burgundian } ]
+	[[occitain] owns_all_provinces = { X_is_colonial_province_trigger = no culture = occitain } any_province = { X_is_colonial_province_trigger = no culture = occitain } ]
+	[[breton] owns_all_provinces = { X_is_colonial_province_trigger = no culture = breton } any_province = { X_is_colonial_province_trigger = no culture = breton } ]
+	#lowlands
+	[[dutch] owns_all_provinces = { X_is_colonial_province_trigger = no culture = dutch } any_province = { X_is_colonial_province_trigger = no culture = dutch } ]
+	[[wallonian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = wallonian } any_province = { X_is_colonial_province_trigger = no culture = wallonian } ]
+	[[louisianans] owns_all_provinces = { X_is_colonial_province_trigger = no culture = louisianans } any_province = { X_is_colonial_province_trigger = no culture = louisianans } ]
+	[[quebecois] owns_all_provinces = { X_is_colonial_province_trigger = no culture = quebecois } any_province = { X_is_colonial_province_trigger = no culture = quebecois } ]
+	[[flemish] owns_all_provinces = { X_is_colonial_province_trigger = no culture = flemish } any_province = { X_is_colonial_province_trigger = no culture = flemish } ]
+	#british
+	[[english] owns_all_provinces = { X_is_colonial_province_trigger = no culture = english } any_province = { X_is_colonial_province_trigger = no culture = english } ]
+	[[american] owns_all_provinces = { X_is_colonial_province_trigger = no culture = american } any_province = { X_is_colonial_province_trigger = no culture = american } ]
+	[[welsh] owns_all_provinces = { X_is_colonial_province_trigger = no culture = welsh } any_province = { X_is_colonial_province_trigger = no culture = welsh } ]
+	[[cornish] owns_all_provinces = { X_is_colonial_province_trigger = no culture = cornish } any_province = { X_is_colonial_province_trigger = no culture = cornish } ]
+	[[scottish] owns_all_provinces = { X_is_colonial_province_trigger = no culture = scottish } any_province = { X_is_colonial_province_trigger = no culture = scottish } ]
+	[[highland_scottish] owns_all_provinces = { X_is_colonial_province_trigger = no culture = highland_scottish } any_province = { X_is_colonial_province_trigger = no culture = highland_scottish } ]
+	#hindusthani
+	[[avadhi] owns_all_provinces = { X_is_colonial_province_trigger = no culture = avadhi } any_province = { X_is_colonial_province_trigger = no culture = avadhi } ]
+	[[bihari] owns_all_provinces = { X_is_colonial_province_trigger = no culture = bihari } any_province = { X_is_colonial_province_trigger = no culture = bihari } ]
+	[[pahari] owns_all_provinces = { X_is_colonial_province_trigger = no culture = pahari } any_province = { X_is_colonial_province_trigger = no culture = pahari } ]
+	[[nepali] owns_all_provinces = { X_is_colonial_province_trigger = no culture = nepali } any_province = { X_is_colonial_province_trigger = no culture = nepali } ]
+	[[kanauji] owns_all_provinces = { X_is_colonial_province_trigger = no culture = kanauji } any_province = { X_is_colonial_province_trigger = no culture = kanauji } ]
+	[[vindhyan] owns_all_provinces = { X_is_colonial_province_trigger = no culture = vindhyan } any_province = { X_is_colonial_province_trigger = no culture = vindhyan } ]
+	[[panjabi] owns_all_provinces = { X_is_colonial_province_trigger = no culture = panjabi } any_province = { X_is_colonial_province_trigger = no culture = panjabi } ]
+	[[sindhi] owns_all_provinces = { X_is_colonial_province_trigger = no culture = sindhi } any_province = { X_is_colonial_province_trigger = no culture = sindhi } ]
+	[[rajput] owns_all_provinces = { X_is_colonial_province_trigger = no culture = rajput } any_province = { X_is_colonial_province_trigger = no culture = rajput } ]
+	[[kashmiri] owns_all_provinces = { X_is_colonial_province_trigger = no culture = kashmiri } any_province = { X_is_colonial_province_trigger = no culture = kashmiri } ]
+	#iranian
+	[[persian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = persian } any_province = { X_is_colonial_province_trigger = no culture = persian } ]
+	[[luri] owns_all_provinces = { X_is_colonial_province_trigger = no culture = luri } any_province = { X_is_colonial_province_trigger = no culture = luri } ]
+	[[azerbaijani] owns_all_provinces = { X_is_colonial_province_trigger = no culture = azerbaijani } any_province = { X_is_colonial_province_trigger = no culture = azerbaijani } ]
+	[[khorasani] owns_all_provinces = { X_is_colonial_province_trigger = no culture = khorasani } any_province = { X_is_colonial_province_trigger = no culture = khorasani } ]
+	[[baluchi] owns_all_provinces = { X_is_colonial_province_trigger = no culture = baluchi } any_province = { X_is_colonial_province_trigger = no culture = baluchi } ]
+	[[afghani] owns_all_provinces = { X_is_colonial_province_trigger = no culture = afghani } any_province = { X_is_colonial_province_trigger = no culture = afghani } ]
+	[[kurdish] owns_all_provinces = { X_is_colonial_province_trigger = no culture = kurdish } any_province = { X_is_colonial_province_trigger = no culture = kurdish } ]
+	[[mazandarani] owns_all_provinces = { X_is_colonial_province_trigger = no culture = mazandarani } any_province = { X_is_colonial_province_trigger = no culture = mazandarani } ]
+	[[georgian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = georgian } any_province = { X_is_colonial_province_trigger = no culture = georgian } ]
+	[[armenian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = armenian } any_province = { X_is_colonial_province_trigger = no culture = armenian } ]
+	#turko_semitic
+	[[turkish] owns_all_provinces = { X_is_colonial_province_trigger = no culture = turkish } any_province = { X_is_colonial_province_trigger = no culture = turkish } ]
+	[[al_misr_arabic] owns_all_provinces = { X_is_colonial_province_trigger = no culture = al_misr_arabic } any_province = { X_is_colonial_province_trigger = no culture = al_misr_arabic } ]
+	[[al_suryah_arabic] owns_all_provinces = { X_is_colonial_province_trigger = no culture = al_suryah_arabic } any_province = { X_is_colonial_province_trigger = no culture = al_suryah_arabic } ]
+	[[al_iraqiya_arabic] owns_all_provinces = { X_is_colonial_province_trigger = no culture = al_iraqiya_arabic } any_province = { X_is_colonial_province_trigger = no culture = al_iraqiya_arabic } ]
+	[[gulf_arabic] owns_all_provinces = { X_is_colonial_province_trigger = no culture = gulf_arabic } any_province = { X_is_colonial_province_trigger = no culture = gulf_arabic } ]
+	[[bedouin_arabic] owns_all_provinces = { X_is_colonial_province_trigger = no culture = bedouin_arabic } any_province = { X_is_colonial_province_trigger = no culture = bedouin_arabic } ]
+	[[mahri_culture] owns_all_provinces = { X_is_colonial_province_trigger = no culture = mahri_culture } any_province = { X_is_colonial_province_trigger = no culture = mahri_culture } ]
+	[[hejazi_culture] owns_all_provinces = { X_is_colonial_province_trigger = no culture = hejazi_culture } any_province = { X_is_colonial_province_trigger = no culture = hejazi_culture } ]
+	[[omani_culture] owns_all_provinces = { X_is_colonial_province_trigger = no culture = omani_culture } any_province = { X_is_colonial_province_trigger = no culture = omani_culture } ]
+	[[yemeni_culture] owns_all_provinces = { X_is_colonial_province_trigger = no culture = yemeni_culture } any_province = { X_is_colonial_province_trigger = no culture = yemeni_culture } ]
+	#cushitic
+	[[somali] owns_all_provinces = { X_is_colonial_province_trigger = no culture = somali } any_province = { X_is_colonial_province_trigger = no culture = somali } ]
+	[[harari] owns_all_provinces = { X_is_colonial_province_trigger = no culture = harari } any_province = { X_is_colonial_province_trigger = no culture = harari } ]
+	[[afar] owns_all_provinces = { X_is_colonial_province_trigger = no culture = afar } any_province = { X_is_colonial_province_trigger = no culture = afar } ]
+	[[oromo] owns_all_provinces = { X_is_colonial_province_trigger = no culture = oromo } any_province = { X_is_colonial_province_trigger = no culture = oromo } ]
+	[[tigray] owns_all_provinces = { X_is_colonial_province_trigger = no culture = tigray } any_province = { X_is_colonial_province_trigger = no culture = tigray } ]
+	[[sidamo] owns_all_provinces = { X_is_colonial_province_trigger = no culture = sidamo } any_province = { X_is_colonial_province_trigger = no culture = sidamo } ]
+	[[amhara] owns_all_provinces = { X_is_colonial_province_trigger = no culture = amhara } any_province = { X_is_colonial_province_trigger = no culture = amhara } ]
+	[[nubian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = nubian } any_province = { X_is_colonial_province_trigger = no culture = nubian } ]
+	[[beja] owns_all_provinces = { X_is_colonial_province_trigger = no culture = beja } any_province = { X_is_colonial_province_trigger = no culture = beja } ]
+	#southern_african
+	[[makua] owns_all_provinces = { X_is_colonial_province_trigger = no culture = makua } any_province = { X_is_colonial_province_trigger = no culture = makua } ]
+	[[acholi] owns_all_provinces = { X_is_colonial_province_trigger = no culture = acholi } any_province = { X_is_colonial_province_trigger = no culture = acholi } ]
+	[[nguni] owns_all_provinces = { X_is_colonial_province_trigger = no culture = nguni } any_province = { X_is_colonial_province_trigger = no culture = nguni } ]
+	[[bemba] owns_all_provinces = { X_is_colonial_province_trigger = no culture = bemba } any_province = { X_is_colonial_province_trigger = no culture = bemba } ]
+	[[khoisan] owns_all_provinces = { X_is_colonial_province_trigger = no culture = khoisan } any_province = { X_is_colonial_province_trigger = no culture = khoisan } ]
+	[[shona] owns_all_provinces = { X_is_colonial_province_trigger = no culture = shona } any_province = { X_is_colonial_province_trigger = no culture = shona } ]
+	[[madagasque] owns_all_provinces = { X_is_colonial_province_trigger = no culture = madagasque } any_province = { X_is_colonial_province_trigger = no culture = madagasque } ]
+	[[swahili] owns_all_provinces = { X_is_colonial_province_trigger = no culture = swahili } any_province = { X_is_colonial_province_trigger = no culture = swahili } ]
+	[[nyasa] owns_all_provinces = { X_is_colonial_province_trigger = no culture = nyasa } any_province = { X_is_colonial_province_trigger = no culture = nyasa } ]
+	#mande
+	[[mali] owns_all_provinces = { X_is_colonial_province_trigger = no culture = mali } any_province = { X_is_colonial_province_trigger = no culture = mali } ]
+	[[songhai] owns_all_provinces = { X_is_colonial_province_trigger = no culture = songhai } any_province = { X_is_colonial_province_trigger = no culture = songhai } ]
+	[[soninke] owns_all_provinces = { X_is_colonial_province_trigger = no culture = soninke } any_province = { X_is_colonial_province_trigger = no culture = soninke } ]
+	[[bambara] owns_all_provinces = { X_is_colonial_province_trigger = no culture = bambara } any_province = { X_is_colonial_province_trigger = no culture = bambara } ]
+	[[bozo] owns_all_provinces = { X_is_colonial_province_trigger = no culture = bozo } any_province = { X_is_colonial_province_trigger = no culture = bozo } ]
+	[[dyola] owns_all_provinces = { X_is_colonial_province_trigger = no culture = dyola } any_province = { X_is_colonial_province_trigger = no culture = dyola } ]
+	[[yorumba] owns_all_provinces = { X_is_colonial_province_trigger = no culture = yorumba } any_province = { X_is_colonial_province_trigger = no culture = yorumba } ]
+	[[aka] owns_all_provinces = { X_is_colonial_province_trigger = no culture = aka } any_province = { X_is_colonial_province_trigger = no culture = aka } ]
+	[[nupe] owns_all_provinces = { X_is_colonial_province_trigger = no culture = nupe } any_province = { X_is_colonial_province_trigger = no culture = nupe } ]
+	[[fon] owns_all_provinces = { X_is_colonial_province_trigger = no culture = fon } any_province = { X_is_colonial_province_trigger = no culture = fon } ]
+	[[mossi] owns_all_provinces = { X_is_colonial_province_trigger = no culture = mossi } any_province = { X_is_colonial_province_trigger = no culture = mossi } ]
+	[[dagomba] owns_all_provinces = { X_is_colonial_province_trigger = no culture = dagomba } any_province = { X_is_colonial_province_trigger = no culture = dagomba } ]
+	[[hausa] owns_all_provinces = { X_is_colonial_province_trigger = no culture = hausa } any_province = { X_is_colonial_province_trigger = no culture = hausa } ]
+	[[kanuri] owns_all_provinces = { X_is_colonial_province_trigger = no culture = kanuri } any_province = { X_is_colonial_province_trigger = no culture = kanuri } ]
+	[[bilala] owns_all_provinces = { X_is_colonial_province_trigger = no culture = bilala } any_province = { X_is_colonial_province_trigger = no culture = bilala } ]
+	[[tunjur] owns_all_provinces = { X_is_colonial_province_trigger = no culture = tunjur } any_province = { X_is_colonial_province_trigger = no culture = tunjur } ]
+	[[senegambian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = senegambian } any_province = { X_is_colonial_province_trigger = no culture = senegambian } ]
+	[[fulani] owns_all_provinces = { X_is_colonial_province_trigger = no culture = fulani } any_province = { X_is_colonial_province_trigger = no culture = fulani } ]
+}
+
+X_culture_exists_trigger = {
+	#tartar
+	[[astrakhani] any_province = { X_is_colonial_province_trigger = no culture = astrakhani } ]
+	[[uzbehk] any_province = { X_is_colonial_province_trigger = no culture = uzbehk } ]
+	[[ostyaki] any_province = { X_is_colonial_province_trigger = no culture = ostyaki } ]
+	[[turkmeni] any_province = { X_is_colonial_province_trigger = no culture = turkmeni } ]
+	[[bashkir] any_province = { X_is_colonial_province_trigger = no culture = bashkir } ]
+	[[khazak] any_province = { X_is_colonial_province_trigger = no culture = khazak } ]
+	[[kirgiz] any_province = { X_is_colonial_province_trigger = no culture = kirgiz } ]
+	[[circassian] any_province = { X_is_colonial_province_trigger = no culture = circassian } ]
+	[[dagestani] any_province = { X_is_colonial_province_trigger = no culture = dagestani } ]
+	[[crimean] any_province = { X_is_colonial_province_trigger = no culture = crimean } ]
+	[[kazani] any_province = { X_is_colonial_province_trigger = no culture = kazani } ]
+	[[chuvash] any_province = { X_is_colonial_province_trigger = no culture = chuvash } ]
+	[[mishary] any_province = { X_is_colonial_province_trigger = no culture = mishary } ]
+	[[nogaybak] any_province = { X_is_colonial_province_trigger = no culture = nogaybak } ]
+	[[siberian] any_province = { X_is_colonial_province_trigger = no culture = siberian } ]
+	#germanic
+	[[pommeranian] any_province = { X_is_colonial_province_trigger = no culture = pommeranian } ]
+	[[prussian] any_province = { X_is_colonial_province_trigger = no culture = prussian } ]
+	[[baltic_german] any_province = { X_is_colonial_province_trigger = no culture = baltic_german } ]
+	[[lower_saxon] any_province = { X_is_colonial_province_trigger = no culture = lower_saxon } ]
+	[[hannoverian] any_province = { X_is_colonial_province_trigger = no culture = hannoverian } ]
+	[[hessian] any_province = { X_is_colonial_province_trigger = no culture = hessian } ]
+	[[saxon] any_province = { X_is_colonial_province_trigger = no culture = saxon } ]
+	[[franconian] any_province = { X_is_colonial_province_trigger = no culture = franconian } ]
+	[[swabian] any_province = { X_is_colonial_province_trigger = no culture = swabian } ]
+	[[swiss] any_province = { X_is_colonial_province_trigger = no culture = swiss } ]
+	[[bavarian] any_province = { X_is_colonial_province_trigger = no culture = bavarian } ]
+	[[austrian] any_province = { X_is_colonial_province_trigger = no culture = austrian } ]
+	[[frisian] any_province = { X_is_colonial_province_trigger = no culture = frisian } ]
+	#latin
+	[[lombard] any_province = { X_is_colonial_province_trigger = no culture = lombard } ]
+	[[tuscan] any_province = { X_is_colonial_province_trigger = no culture = tuscan } ]
+	[[sardinian] any_province = { X_is_colonial_province_trigger = no culture = sardinian } ]
+	[[romagnan] any_province = { X_is_colonial_province_trigger = no culture = romagnan } ]
+	[[ligurian] any_province = { X_is_colonial_province_trigger = no culture = ligurian } ]
+	[[venetian] any_province = { X_is_colonial_province_trigger = no culture = venetian } ]
+	[[dalmatian] any_province = { X_is_colonial_province_trigger = no culture = dalmatian } ]
+	[[neapolitan] any_province = { X_is_colonial_province_trigger = no culture = neapolitan } ]
+	[[piedmontese] any_province = { X_is_colonial_province_trigger = no culture = piedmontese } ]
+	[[umbrian] any_province = { X_is_colonial_province_trigger = no culture = umbrian } ]
+	[[sicilian] any_province = { X_is_colonial_province_trigger = no culture = sicilian } ]
+	[[maltese] any_province = { X_is_colonial_province_trigger = no culture = maltese } ]
+	#west_slavic
+	[[czech] any_province = { X_is_colonial_province_trigger = no culture = czech } ]
+	[[polish] any_province = { X_is_colonial_province_trigger = no culture = polish } ]
+	[[schlesian] any_province = { X_is_colonial_province_trigger = no culture = schlesian } ]
+	[[sorbian] any_province = { X_is_colonial_province_trigger = no culture = sorbian } ]
+	[[slovak] any_province = { X_is_colonial_province_trigger = no culture = slovak } ]
+	[[lithuanian] any_province = { X_is_colonial_province_trigger = no culture = lithuanian } ]
+	#east_slavic
+	[[russian] any_province = { X_is_colonial_province_trigger = no culture = russian } ]
+	[[novgorodian] any_province = { X_is_colonial_province_trigger = no culture = novgorodian } ]
+	[[ryazanian] any_province = { X_is_colonial_province_trigger = no culture = ryazanian } ]
+	[[byelorussian] any_province = { X_is_colonial_province_trigger = no culture = byelorussian } ]
+	[[ruthenian] any_province = { X_is_colonial_province_trigger = no culture = ruthenian } ]
+	[[karelian] any_province = { X_is_colonial_province_trigger = no culture = karelian } ]
+	#scandinavian
+	[[swedish] any_province = { X_is_colonial_province_trigger = no culture = swedish } ]
+	[[danish] any_province = { X_is_colonial_province_trigger = no culture = danish } ]
+	[[norwegian] any_province = { X_is_colonial_province_trigger = no culture = norwegian } ]
+	[[finnish] any_province = { X_is_colonial_province_trigger = no culture = finnish } ]
+	[[sapmi] any_province = { X_is_colonial_province_trigger = no culture = sapmi } ]
+	[[icelandic] any_province = { X_is_colonial_province_trigger = no culture = icelandic } ]
+	[[estonian] any_province = { X_is_colonial_province_trigger = no culture = estonian } ]
+	[[latvian] any_province = { X_is_colonial_province_trigger = no culture = latvian } ]
+	#carpathian
+	[[transylvanian] any_province = { X_is_colonial_province_trigger = no culture = transylvanian } ]
+	[[romanian] any_province = { X_is_colonial_province_trigger = no culture = romanian } ]
+	[[hungarian] any_province = { X_is_colonial_province_trigger = no culture = hungarian } ]
+	[[croatian] any_province = { X_is_colonial_province_trigger = no culture = croatian } ]
+	[[serbian] any_province = { X_is_colonial_province_trigger = no culture = serbian } ]
+	[[slovene] any_province = { X_is_colonial_province_trigger = no culture = slovene } ]
+	[[estonian] any_province = { X_is_colonial_province_trigger = no culture = estonian } ]
+	[[bosnian] any_province = { X_is_colonial_province_trigger = no culture = bosnian } ]
+	[[bulgarian] any_province = { X_is_colonial_province_trigger = no culture = bulgarian } ]
+	[[albanian] any_province = { X_is_colonial_province_trigger = no culture = albanian } ]
+	[[greek] any_province = { X_is_colonial_province_trigger = no culture = greek } ]
+	[[pontic_greek] any_province = { X_is_colonial_province_trigger = no culture = pontic_greek } ]
+	[[goths] any_province = { X_is_colonial_province_trigger = no culture = goths } ]
+	#iberian
+	[[castillian] any_province = { X_is_colonial_province_trigger = no culture = castillian } ]
+	[[mexican] any_province = { X_is_colonial_province_trigger = no culture = mexican } ]
+	[[platinean] any_province = { X_is_colonial_province_trigger = no culture = platinean } ]
+	[[leonese] any_province = { X_is_colonial_province_trigger = no culture = leonese } ]
+	[[aragonese] any_province = { X_is_colonial_province_trigger = no culture = aragonese } ]
+	[[catalan] any_province = { X_is_colonial_province_trigger = no culture = catalan } ]
+	[[galician] any_province = { X_is_colonial_province_trigger = no culture = galician } ]
+	[[andalucian] any_province = { X_is_colonial_province_trigger = no culture = andalucian } ]
+	[[portugese] any_province = { X_is_colonial_province_trigger = no culture = portugese } ]
+	[[brazilian] any_province = { X_is_colonial_province_trigger = no culture = brazilian } ]
+	[[basque] any_province = { X_is_colonial_province_trigger = no culture = basque } ]
+	#maghrebi
+	[[moroccan] any_province = { X_is_colonial_province_trigger = no culture = moroccan } ]
+	[[tunisian] any_province = { X_is_colonial_province_trigger = no culture = tunisian } ]
+	[[algerian] any_province = { X_is_colonial_province_trigger = no culture = algerian } ]
+	[[berber] any_province = { X_is_colonial_province_trigger = no culture = berber } ]
+	[[tuareg] any_province = { X_is_colonial_province_trigger = no culture = tuareg } ]
+	#french
+	[[cosmopolitan_french] any_province = { X_is_colonial_province_trigger = no culture = cosmopolitan_french } ]
+	[[gascon] any_province = { X_is_colonial_province_trigger = no culture = gascon } ]
+	[[normand] any_province = { X_is_colonial_province_trigger = no culture = normand } ]
+	[[aquitaine] any_province = { X_is_colonial_province_trigger = no culture = aquitaine } ]
+	[[burgundian] any_province = { X_is_colonial_province_trigger = no culture = burgundian } ]
+	[[occitain] any_province = { X_is_colonial_province_trigger = no culture = occitain } ]
+	[[breton] any_province = { X_is_colonial_province_trigger = no culture = breton } ]
+	#lowlands
+	[[dutch] any_province = { X_is_colonial_province_trigger = no culture = dutch } ]
+	[[wallonian] any_province = { X_is_colonial_province_trigger = no culture = wallonian } ]
+	[[louisianans] any_province = { X_is_colonial_province_trigger = no culture = louisianans } ]
+	[[quebecois] any_province = { X_is_colonial_province_trigger = no culture = quebecois } ]
+	[[flemish] any_province = { X_is_colonial_province_trigger = no culture = flemish } ]
+	#british
+	[[english] any_province = { X_is_colonial_province_trigger = no culture = english } ]
+	[[american] any_province = { X_is_colonial_province_trigger = no culture = american } ]
+	[[welsh] any_province = { X_is_colonial_province_trigger = no culture = welsh } ]
+	[[cornish] any_province = { X_is_colonial_province_trigger = no culture = cornish } ]
+	[[scottish] any_province = { X_is_colonial_province_trigger = no culture = scottish } ]
+	[[highland_scottish] any_province = { X_is_colonial_province_trigger = no culture = highland_scottish } ]
+	#hindusthani
+	[[avadhi] any_province = { X_is_colonial_province_trigger = no culture = avadhi } ]
+	[[bihari] any_province = { X_is_colonial_province_trigger = no culture = bihari } ]
+	[[pahari] any_province = { X_is_colonial_province_trigger = no culture = pahari } ]
+	[[nepali] any_province = { X_is_colonial_province_trigger = no culture = nepali } ]
+	[[kanauji] any_province = { X_is_colonial_province_trigger = no culture = kanauji } ]
+	[[vindhyan] any_province = { X_is_colonial_province_trigger = no culture = vindhyan } ]
+	[[panjabi] any_province = { X_is_colonial_province_trigger = no culture = panjabi } ]
+	[[sindhi] any_province = { X_is_colonial_province_trigger = no culture = sindhi } ]
+	[[rajput] any_province = { X_is_colonial_province_trigger = no culture = rajput } ]
+	[[kashmiri] any_province = { X_is_colonial_province_trigger = no culture = kashmiri } ]
+	#iranian
+	[[persian] any_province = { X_is_colonial_province_trigger = no culture = persian } ]
+	[[luri] any_province = { X_is_colonial_province_trigger = no culture = luri } ]
+	[[azerbaijani] any_province = { X_is_colonial_province_trigger = no culture = azerbaijani } ]
+	[[khorasani] any_province = { X_is_colonial_province_trigger = no culture = khorasani } ]
+	[[baluchi] any_province = { X_is_colonial_province_trigger = no culture = baluchi } ]
+	[[afghani] any_province = { X_is_colonial_province_trigger = no culture = afghani } ]
+	[[kurdish] any_province = { X_is_colonial_province_trigger = no culture = kurdish } ]
+	[[mazandarani] any_province = { X_is_colonial_province_trigger = no culture = mazandarani } ]
+	[[georgian] any_province = { X_is_colonial_province_trigger = no culture = georgian } ]
+	[[armenian] any_province = { X_is_colonial_province_trigger = no culture = armenian } ]
+	#turko_semitic
+	[[turkish] any_province = { X_is_colonial_province_trigger = no culture = turkish } ]
+	[[al_misr_arabic] any_province = { X_is_colonial_province_trigger = no culture = al_misr_arabic } ]
+	[[al_suryah_arabic] any_province = { X_is_colonial_province_trigger = no culture = al_suryah_arabic } ]
+	[[al_iraqiya_arabic] any_province = { X_is_colonial_province_trigger = no culture = al_iraqiya_arabic } ]
+	[[gulf_arabic] any_province = { X_is_colonial_province_trigger = no culture = gulf_arabic } ]
+	[[bedouin_arabic] any_province = { X_is_colonial_province_trigger = no culture = bedouin_arabic } ]
+	[[mahri_culture] any_province = { X_is_colonial_province_trigger = no culture = mahri_culture } ]
+	[[hejazi_culture] any_province = { X_is_colonial_province_trigger = no culture = hejazi_culture } ]
+	[[omani_culture] any_province = { X_is_colonial_province_trigger = no culture = omani_culture } ]
+	[[yemeni_culture] any_province = { X_is_colonial_province_trigger = no culture = yemeni_culture } ]
+	#cushitic
+	[[somali] any_province = { X_is_colonial_province_trigger = no culture = somali } ]
+	[[harari] any_province = { X_is_colonial_province_trigger = no culture = harari } ]
+	[[afar] any_province = { X_is_colonial_province_trigger = no culture = afar } ]
+	[[oromo] any_province = { X_is_colonial_province_trigger = no culture = oromo } ]
+	[[tigray] any_province = { X_is_colonial_province_trigger = no culture = tigray } ]
+	[[sidamo] any_province = { X_is_colonial_province_trigger = no culture = sidamo } ]
+	[[amhara] any_province = { X_is_colonial_province_trigger = no culture = amhara } ]
+	[[nubian] any_province = { X_is_colonial_province_trigger = no culture = nubian } ]
+	[[beja] any_province = { X_is_colonial_province_trigger = no culture = beja } ]
+	#southern_african
+	[[makua] any_province = { X_is_colonial_province_trigger = no culture = makua } ]
+	[[acholi] any_province = { X_is_colonial_province_trigger = no culture = acholi } ]
+	[[nguni] any_province = { X_is_colonial_province_trigger = no culture = nguni } ]
+	[[bemba] any_province = { X_is_colonial_province_trigger = no culture = bemba } ]
+	[[khoisan] any_province = { X_is_colonial_province_trigger = no culture = khoisan } ]
+	[[shona] any_province = { X_is_colonial_province_trigger = no culture = shona } ]
+	[[madagasque] any_province = { X_is_colonial_province_trigger = no culture = madagasque } ]
+	[[swahili] any_province = { X_is_colonial_province_trigger = no culture = swahili } ]
+	[[nyasa] any_province = { X_is_colonial_province_trigger = no culture = nyasa } ]
+	#mande
+	[[mali] any_province = { X_is_colonial_province_trigger = no culture = mali } ]
+	[[songhai] any_province = { X_is_colonial_province_trigger = no culture = songhai } ]
+	[[soninke] any_province = { X_is_colonial_province_trigger = no culture = soninke } ]
+	[[bambara] any_province = { X_is_colonial_province_trigger = no culture = bambara } ]
+	[[bozo] any_province = { X_is_colonial_province_trigger = no culture = bozo } ]
+	[[dyola] any_province = { X_is_colonial_province_trigger = no culture = dyola } ]
+	[[yorumba] any_province = { X_is_colonial_province_trigger = no culture = yorumba } ]
+	[[aka] any_province = { X_is_colonial_province_trigger = no culture = aka } ]
+	[[nupe] any_province = { X_is_colonial_province_trigger = no culture = nupe } ]
+	[[fon] any_province = { X_is_colonial_province_trigger = no culture = fon } ]
+	[[mossi] any_province = { X_is_colonial_province_trigger = no culture = mossi } ]
+	[[dagomba] any_province = { X_is_colonial_province_trigger = no culture = dagomba } ]
+	[[hausa] any_province = { X_is_colonial_province_trigger = no culture = hausa } ]
+	[[kanuri] any_province = { X_is_colonial_province_trigger = no culture = kanuri } ]
+	[[bilala] any_province = { X_is_colonial_province_trigger = no culture = bilala } ]
+	[[tunjur] any_province = { X_is_colonial_province_trigger = no culture = tunjur } ]
+	[[senegambian] any_province = { X_is_colonial_province_trigger = no culture = senegambian } ]
+	[[fulani] any_province = { X_is_colonial_province_trigger = no culture = fulani } ]
+}

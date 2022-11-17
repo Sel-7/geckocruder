@@ -1,0 +1,1837 @@
+patagonia = {
+	location = 2868
+	outgoing = {
+		name = "laplata"
+		path = {
+			1537 1536 
+		}
+		control = {
+			1840.000000 159.000000 1912.000000 221.000000 
+		}
+	}
+	members = {
+		781 782 2869 #patagonia_area
+		783 2874 #southern_chile_area
+		1095 2025 #south_atlantic_islands_area
+		2863 2870 2875 2876 #patagonian_andes
+		785 2867 2871 2872 #nehuenken_area
+		780 786 2868# bahia_blanca_area
+	}
+}
+
+mexico = {
+	location = 852
+	color = { 0 176 0 }
+	outgoing = {
+		name = "carribean_trade"
+		path = {
+			847 848 1510 1511 1512 1518 1516 
+		}
+		control = {
+			1313.000000 1105.000000 1323.000000 1142.000000 1336.000000 1183.000000 1378.000000 1226.000000 1435.000000 1236.000000 1499.000000 1202.000000 1563.000000 1197.000000 1600.000000 1177.000000 1623.000000 1171.000000 1637.000000 1165.000000 
+		}
+	}
+	outgoing = {
+		name = "rio_grande"
+		path = {
+			1508 1509 2647 2646 
+		}
+		control = {
+			 1262.000000 1165.000000 1298.000000 1179.000000 1309.000000 1233.000000 1321.000000 1291.000000
+		}
+	}
+	outgoing = {
+		name = "panama"
+		path = {
+			1550 1549 1548 835 
+		}
+		control = {
+			1287.000000 1087.000000 1382.000000 1072.000000 1451.000000 1020.000000 1501.000000 986.000000 1537.000000 972.000000 1562.000000 994.000000 
+		}
+	}
+	members = {
+		2634 2652 4588 4591 #east_yucatan_area
+		846 2633 2651 4590 #yucatan_area
+		842 843 2636 4589 4594 #guatemala_lowlands_area
+		845 2632 2650 #campeche_area
+		2635 4585 4586 4587 #chiapas_area
+		2630 2631 2647 #eastern_mexico_area
+		850 2628 2644 4583 4582 #puebla_area
+		848 2641 4598 #huasteca_area
+		2629 4584 #oaxaca_area
+		2646 4581 2645 #mixteca_area
+		852 2626 4570 4571 4572 #mexico_area
+		2622 2623 2624 4573 4574 #michoacan_area
+		2643 4575 4579 #tierra_caliente_area
+		2617 2621 #jalisco_area
+		853 2615 4641 4640 #guanajuato_area
+		856 4643 4645 #zacatecas_area
+		857 2642 4642 #gran_chichimeca_area
+	}
+}
+
+rio_grande = {
+	location = 2499
+	outgoing = {
+		name = "ohio"
+		path = {
+			1508 1507 
+		}
+		control = {
+			1338.000000 1333.000000 
+		}
+	}
+	members = {
+		858 2499 2614 2668 #rio_grande_area
+		861 2619 2666 2667 #northeast_mexico_area
+		2498 4628 4629 2497 #pecos_area
+		887 883 4627 4911 #texas_area
+		884 888 2665 2669 #coastal_prarie_area
+		886 2500 4909 4910 #texas_plains_area
+		892 896 #lower_plains_area
+	}
+}
+
+ohio = {
+	location = 2526
+	inland = yes
+	color = {
+		129 214 238 
+	}
+	outgoing = {
+		name = "chesapeake_bay"
+		path = {
+			948 2011 
+		}
+		control = {
+			1522.000000 1531.000000 
+		}
+	}
+	outgoing = {
+		name = "st_lawrence"
+		path = {
+			946 991 
+		}
+		control = {
+			1503.000000 1559.000000 
+		}
+	}
+	outgoing = {
+		name = "carribean_trade"
+		path = {
+			1506 1505 1525 1516 
+		}
+		control = {
+			1494.000000 1317.000000 1541.000000 1254.000000 1607.000000 1231.000000 
+		}
+	}
+	members = {
+		893 2014 2516 #lower_louisiana_area
+		921 922 923 2530 2533 #west_florida_area
+		919 920 2528 2529 4884 #mississippi_area
+		894 895 897 4885 4923 #mississippi_plain_area
+		924 925 2531 2532 4883 #alabama_area
+		918 934 939 4913 #choctaw_area
+		899 2509 2515 4886 #ozarks_area
+		900 902 2514 4906 #upper_louisiana_area
+		940 4887 4921 #western_kentucky_area
+		941 2526 4888 #kentucky_area
+		951 2551 4889 #appalachia_area
+		954 2555 4875 #westsylvania_area
+		958 959 960 4872 #iroquoisia_area
+		946 947 948 2525 4907 #ohio_country_area
+		942 943 2523 2524 4922 #miami_river_area
+		944 945 2521 2522 #michigan_area
+		2519 2520 4904 #southern_illinois_area
+		915 916 917 4903 #illinois_country_area
+		912 913 914 4899 #wisconsin_area
+		910 911 2517 2518 4898 #lake_superior_area
+		904 908 2512 4901 4902 #minnessota_area
+		905 2513 4900 4905 #iowa_area
+	}
+}
+
+doab = {
+	location = 524
+	inland = yes
+	color = { 236 162 19 }
+	outgoing = {
+		name = "lahore_trade"
+		path = {
+			522 2062 4411
+		}
+		control = {
+			4021.000000 1115.000000 
+		}
+	}
+	members = {
+		555 2055 2095 4490 #purvanchal_area
+		2097 4468 #baghelkhand_area
+		559 2059 4466 4467 #bundelkhand_area
+		525 4465 #gird_area
+		524 556 2063 4496 #lower_doab_area
+		523 2094 4494 4495 4497 #oudh_area
+		4491 4492 554 #baisi_rajya_area
+		509 511 2069 4493 #himalayan_hills_area
+		2061 4498 4499 #katehar_area
+		522 2060 2062 #upper_doab_area
+		519 520 2064 4500 #jaipur_area
+		510 2065 4411 4463 #sirhind_area
+		512 4502 4507 2066 #jangladesh_area
+		507 2075 2076 4510 4513 #lahore_area
+		506 2079 2086 4508 4509 #multan_area
+		2077 2078 4511 #sind_sagar_area
+		508 2073 2074 4449 4521 #kashmir_area
+	}
+}
+
+timbuktu = {
+	location = 1132
+	inland = yes
+	color = { 230 231 62 }
+	outgoing = {
+		name = "tunis"
+		path = {
+		}
+		control = {
+			2753.500 1063.000 2719.000 1140.000 2735.000 1179.000 2814.000 1192.500 2852.000 1259.000
+		}
+	}
+	outgoing = {
+		name = "ivory_coast"
+		path = {
+			2263 1135 2252 2255 2257 1466 
+		}
+		control = {
+			2764.000000 887.000000 2769.000000 881.000000 2755.000000 822.000000 2755.000000 770.000000 2773.000000 750.000000 
+		}
+	}
+	outgoing = {
+		name = "katsina"
+		path = {
+			1148 2273 2269 1133 2262 1132 
+		}
+		control = {
+			2790.000000 927.000000 2806.000000 912.000000 2852.000000 890.000000 2892.000000 894.000000  2899.000000 875.000000 
+		}
+	}
+	members = {
+		5805 5806 5809 5812 #pr_africa_area_1
+		5808 5807 5803 5811 #pr_africa_area_2
+		5804 5800 1127 5801 5802 #pr_africa_area_3
+		1128 1129 1130 2271 5810 #western_sahara_area
+		2243 2245 2246 2247 #baghena_area
+		1132 1133 2260 2262 2264 #niger_bend_area
+		1115 2237 2240 2244 #tekrur_area
+		1120 1121 1124 2248 #manding_area
+		1123 1131 2249 2250 #massina_area
+		1134 2259 2261 2263 #jenne_area
+		1135 1136 1137 2265 2266 #upper_volta_area
+		1122 1125 2252 2253 #kong_area
+		1138 2254 2255 2256 2267 #lower_volta_area
+		1140 1143 2291 2292 2295 #atacora_oueme_area
+		1142 2268 2269 2270 #dendi_area
+	}
+}
+
+georgia = {
+	location = 421
+	color = { 190 35 37 }
+	outgoing = {
+		name = "astrakhan"
+		path = {
+			4301 4156 2201 2208 464
+		}
+		control = {
+			3578.000000 1332.000000 3548.000000 1380.000000 3535.000000 1410.000000
+		}
+	}
+	outgoing = {
+		name = "persia"
+		path = {
+			4341 
+		}
+		control = {
+			 3566.000000 1291.000000 3575.500000 1273.000000 3617.000000 1257.000000 
+		}
+	}
+	outgoing = {
+		name = "crimea"
+		path = {
+			462 2195
+		}
+		control = {
+			 3462.000000 1373.500000 3435.000000 1389.000000 3409.000000 1413.000000 3383.500000 1422.000000 3370.000000 1423.000000 3356.500000 1421.500000 3332.000000 1417.000000
+		}
+	}
+	outgoing = {
+		name = "constantinople"
+		path = {
+			423 330 328 151
+		}
+		control = {
+			3501.000000 1353.000000 3429.000000 1336.000000 3385.000000 1340.000000 3332.000000 1349.000000 #3299.000000 1337.000000 #3273.000000 1339.000000
+		}
+	}
+
+	members = {
+		463 2201 2195 2197 6010 #circassia_area
+		425 2198 2199 2208 4306 #dagestan_area
+		422 462 1856 #imereti_area
+		2196 2204 4303 #samtskhe_area
+		423 2203 4301 #kartli_kakheti_area
+		420 419 2202 2205 6141 #armenia_area
+		421 4299 4305 4340 6139 #shirvan_area
+	}
+}
+
+persia = {
+	location = 4341
+	inland = yes
+	color = { 204 119 31 }
+	outgoing = {
+		name = "basra"
+		path = {
+			426 428 413 412
+		}
+		control = {
+			3591.000000 1234.000000 3561.000000 1228.000000 3564.000000 1167.000000
+		}
+	}
+	outgoing = {
+		name = "lahore_trade"
+		path = {
+			578 451 450 446 2221 2235 2214 
+		}
+		control = {
+		 3668.000000 1269.000000 
+		}
+	}
+	outgoing = {
+		name = "astrakhan"
+		path = {
+			1326 421 425 2199 2208 
+		}
+		control = {
+			3595.000000 1300.000000 3578.000000 1332.000000 3548.000000 1380.000000 3535.000000 1410.000000 
+		}
+	}
+	outgoing = {
+		name = "aleppo"
+		path = {
+			426 428 413 412
+		}
+		control = {
+			3591.000000 1234.000000
+		}
+	}		
+	members = {
+		6142 424 6138 6140 #ardabil_area
+		6136 6133 416 6134 #tabriz_area
+		2207 2206 6135 4304 #urmia_area
+		2212 2215 4300 4338 #azerbaijan_area
+		417 426 4339 6155 #tabarestan_area
+		413 414 2209 2210 2211 #luristan_area
+		428 4337 6144 2213 6145 #teheran_area
+		6157 4341 6156 #astrabad_area
+		412 2217 4289 4290 4342 #khuzestan_area
+		429 4335 6152 6153 6154 #isfahan_area
+		6149 6148 6146 427 #iraq_e_ajam_area
+		4334 433 2222 6151 2216 #birjand_area
+		2218 4329 4330 4331 4171 #farsistan_area
+		430 2219 2223 4332 #persian_gulf_coast
+		432 2220 2234 4345 #kerman_area
+		431 2999 4327 #mogostan_area
+		434 575 2231 2232 2233 #makran_area
+		576 577 2068 #kalat_area
+		505 2072 4505 #northern_sindh_area
+		504 4503 4504 #sindh_area
+	}
+}
+
+lahore_trade = {
+	location = 454
+	color = { 49 185 191 }
+	outgoing = {
+		name = "astrakhan"
+		path = {
+			442 440 443 470 465 464 
+		}
+		control = {
+			3824.000000 1312.000000 3774.000000 1329.000000 3728.000000 1356.000000 3682.000000 1386.000000 3657.000000 1444.000000 3610.000000 1470.000000 
+		}
+	}	
+	outgoing = {
+		name = "siberia"
+		path = {
+		}
+		control = {
+			3873.000 1329.000
+		}
+	}
+	members = {
+		458 460 1967 #ferghana_area
+		457 2364 2356 #arys_area
+		455 1970 2363 #kyzylkum_area
+		448 451 452 578 2226 #kabulistan_area	
+		447 449 2225 #ghor_area
+		435 2224 2229 2230 4324 #sistan_area
+		450 2227 2228 446 #balkh_area
+		2221 2235 2236 4326 2214 #mashhad_area
+		444 445 2350 4325 #merv_area
+		1968 4344 4343 6131 6132 #termez_area
+		454 6127 6128 6130 6129 #samarkand_area
+		442 453 441 #transoxiana_area
+		440 1973 2362 2370 #khiva_area
+		437 438 439 443 2349 #transcaspia_area
+	}
+}
+
+aleppo = {
+	location = 377
+	color = { 202 150 172 }
+	outgoing = {
+		name = "constantinople"
+		path = {
+			1317 1848 322 317 1320 
+		}
+		control = {
+			3308.000000 1243.000000 3264.000000 1243.000000
+		}
+	}
+	outgoing = {
+		name = "alexandria"
+		path = {
+			1316 1315 358 
+		}
+		control = {
+			3353.000000 1241.000000 3335.000000 1200.000000 3284.000000 1180.000000 
+		}
+	}
+	outgoing = {
+		name = "basra"
+		path = {
+			408 409 406 382 377 
+		}
+		control = {
+			3423.000000 1245.000000 3448.000000 1222.000000 3487.000000 1204.000000 3501.000000 1170.000000 3542.000000 1156.000000
+		}
+	}
+	members = {
+		379 1854 380 381 #palestine_area
+		405 4270 4271 2314 #syrian_desert_area
+		378 382 1855 4297 6113 #syria_area
+		377 1849 2313 6114 #aleppo_area
+		2308 411 2309 407 4292 #al_jazira_area
+		415 4293 4294 #shahrizor_area
+		406 409 410 2310 4291 #iraq_arabi_area
+		408 2311 2312 4288 #basra_area
+	}
+}
+laplata = {
+	location = 1536
+	outgoing = {
+		name = "brazil"
+		path = {
+			1535 1534 1533 1532 1531 
+		}
+		control = {
+			2001.000000 329.000000 2074.000000 414.000000 2144.000000 481.000000 2213.000000 579.000000 
+		}
+	}
+	members = {
+		779 2860 2861 2865 2866 #southern_pampas_area
+		778 2846 2848 2849 #buenos_aires_area
+		2843 2844 2845 2847 2877 #cuyo_area
+		772 773 2850 2851 2852 #banda_oriental_area
+		790 2854 2878 #chaco_area
+		777 2853 2855 2858 2859 #misiones_area
+		2857 2879 2884 2887 #rio_grande_do_sol_area
+		791 2836 2842 #tucuman_area
+	}
+}
+
+brazil = {
+	location = 1531
+	outgoing = {
+		name = "ivory_coast"
+		path = {
+			1596 1597 1586 1585 1466 
+		}
+		control = {
+			2333.000000 600.000000 2480.000000 657.000000 2624.000000 550.000000 2788.000000 549.000000 
+		}
+	}
+	outgoing = {
+		name = "amazonas_node"
+		path = {
+			1529 1530 1531 
+		}
+		control = {
+			 2168.000000 834.000000 2087.000000 866.000000
+		}
+	}
+	outgoing = {
+		name = "sevilla"
+		path = {
+		}
+		control = {
+			2353.000 788.500 2482.500 911.000 2540.000 1067.000 2575.500 1112.500 2641.500 1244.000
+		}
+	}
+	outgoing = {
+		name = "tunis"
+		path = {
+		}
+		control = {
+			2361.000 776.500 2495.500 912.000 2547.500 1064.500 2612.000 1117.000 2659.000 1150.000 2667.000 1174.500 2676.000 1190.000 2702.000 1207.000 2732.000 1216.000 2786.000 1226.000 
+		}
+	}
+	members = {
+		768 2895 2897 #west_sao_paolo_area
+		766 769 2896 #sao_paolo_area
+		761 762 763 764 #rio_de_janeiro_area
+		765 2892 2894 2899 #minas_gerais_area
+		759 2898 2891 #diamantina_area
+		756 757 760 2914 2916 #bahia_area
+		2885 2913 2915 2917 2918 #sao_francisco_area
+		754 755 2912 2921 2922 #pernambuco_area
+		750 751 753 #ceara_area
+	}
+}
+
+ivory_coast = {
+	location = 1466
+	color = { 255 255 185 }
+	outgoing = {
+		name = "carribean_trade"
+		path = {
+			1467 1468 1579 1577 1576 1522 1520 1519 1517 1516 
+		}
+		control = {
+			2696.000000 657.000000 2431.000000 777.000000 2279.000000 894.000000 2168.000000 924.000000 2002.000000 1051.000000 1858.000000 1053.000000 1775.000000 1062.000000 1703.000000 1066.000000 1631.000000 1102.000000 
+		}
+	}
+	outgoing = {
+		name = "bordeaux"
+		path = {
+			1467 1468 1470 1471 1566 1563 
+		}
+		control = {
+			2693.000000 675.000000 2498.000000 819.000000 2482.000000 1053.000000 2488.000000 1226.000000 2589.000000 1369.000000 
+		}
+	}
+	outgoing = {
+		name = "english_channel"
+		path = {
+			1467 1468 1470 1471 1566 1563 
+		}
+		control = {
+			2698.000000 664.000000 2487.000000 781.000000 2447.000000 1068.000000 2433.000000 1258.000000 2599.000000 1456.000000 2758.000000 1507.000000 2845.000000 1549.000000 
+		}
+	}
+	outgoing = {
+		name = "sevilla"
+		path = {
+			1467 1468 1470 1471 1566 1563 
+		}
+		control = {
+			2702.000000 692.000000 2568.000000 783.000000 2524.000000 940.000000 2556.000000 1060.000000 2617.000000 1127.000000 2641.000000 1223.000000 
+		}
+	}
+	outgoing = {
+		name = "katsina"
+		path = {
+			1467 1468 1470 1471 1566 1563 
+		}
+		control = {
+			2888.000000 749.000000 2931.500000 791.000000
+		}
+	}
+	members = {
+		5849 5850 5851 5852	#pr_africa_area_14
+		1151 1163 1164 1165 #gulf_of_guinea_area
+		5846 5847 5848 #pr_africa_area_13
+		5842 5844 5845 #pr_africa_area_12
+		5839 5840 5841 5843 #pr_africa_area_11
+		1147 2289 2290 2294 #benin_area
+		1126 1139 1141 2257 2258 #west_africa_coast_area
+		5834 5837 5836 5838 2251 #pr_africa_area_10
+		1118 1119 2241 2242 #guinea_coast_area
+		5831 5832 5833 5835 #pr_africa_area_9
+		1097 1306 #sao_tome_area
+		1096 1111 #cap_verde_area
+		1112 1113 1116 2239 #jolof_area
+		1114 1117 2238 #futa_jallon_area
+	}
+}
+
+katsina = {
+	location = 1149
+	inland = yes
+	color = { 215 56 56 }
+	outgoing = {
+		name = "tunis"
+		path = {
+		}
+		control = {
+			2933.000 931.000 3001.500 1082.000 3013.000 1188.000 2990.000 1220.500 2973.500 1275.500
+		}
+	}
+	outgoing = {
+		name = "ethiopia"
+		path = {
+			2800 2772 
+		}
+		control = {
+			2997.000000 856.000000 3036.000000 845.000000 3198.000000 868.000000 
+		}
+	}
+	members = {
+		1144 1145 1146 1152 1153 #lower_niger_area
+		1161 1162 1249 2285 #adamawa_plateau_area
+		1155 2280 2281 #hausa_area
+		1150 1154 2278 2293 #zazzau_area
+		1148 1149 2279 #katsina_area
+		1157 1160 2282 2283 2284 #bornu_area
+		1158 1159 2286 2287 2288 #kanem_area
+		1156 2272 2273 2274 2276 #azbin_area
+		2275 2277 5830 #east_azbin_area
+		5827 5828 2474 5817 #pr_africa_area_8
+		5820 5824 5829 #pr_africa_area_4
+		5819 5823 5822 5818 #pr_africa_area_5
+		2475 5821 5816 #pr_africa_area_6
+		5814 5815 5813 #pr_africa_area_7
+	}
+}
+
+ethiopia = {
+	location = 2772
+	inland = yes
+	color = { 56 120 191 }
+	outgoing = {
+		name = "alexandria"
+		path = {
+			1232 2321 361 358 
+		}
+		control = {
+			3325.000000 905.000000 3318.000000 1017.000000 3313.000000 1058.000000 3301.000000 1079.000000 3284.000000 1104.000000 
+		}
+	}
+	outgoing = {
+		name = "basra" 
+		path = {
+		}
+		control = {
+			3398.000 838.000 3456.000 795.000 3481.000 817.000 3549.000 849.000 3643.000 888.000 3731.000 960.000 3736.000 1042.000 3693.000 1063.000 3692.500 1082.000 3685.000 1081.500 3677.500 1079.000 3642.000 1070.500 3598.000 1096.000
+		}
+	}
+	members = {
+		774 1219 2801 2802 2932 #darfur_central_sahara_area
+		1216 1221 2800 #kurdufan_area
+		1220 1228 6018 6019 6022 #dongola_area
+		6017 2323 6021 1229 #hadendoa_area
+		1222 1226 1225 2797 2798 #upper_nubia_area
+		1217 2799 4033 #sennar_area
+		1227 2766 2767 2771 #tigray_area
+		1214 1223 1224 2769 2772 #central_ethiopia_area
+		2762 2763 2770 #damot_area
+		2757 2758 2759 4158 #southern_ethiopia_area
+		1218 2756 2760 #hadiya_area
+		1213 2761 2791 #shewa_area
+		1215 2764 2765 2768 #aussa_area
+		1211 1212 2773 2793 #ifat_area 
+		1207 1208 1210 2778 2779 #ogaden_area
+		1209 2786 2789 2792 2790 #somaliland_area
+		1206 2024 2783 2784 2788 #majarteen_area
+		2776 2780 2781 2785 #ajuuran_area
+		1205 2775 2782 2794 2795 #mogadishu_area
+	}
+}
+basra = {
+	location = 1335
+	color = { 178 103 5 }
+	outgoing = {
+		name = "alexandria" 
+		path = {
+			394 393 361 358
+		}
+		control = {
+			3572.000000 1100.500000 3539.000000 1045.000000 3520.000000 1044.000000 3444.000000 1008.000000 3424.000000 980.000000 3399.000000 1002.000000 3329.000000 1110.500000 3317.000000 1130.000000 3286.000000 1151.000000
+		}
+	}
+	members = {
+		383 2328 4268 4269 2327 #tabuk_area
+		393 2338 2337 4272 #nafud_area
+		384 2329 2330 #medina_area
+		385 2331 2332 4277 4278 #mecca_area
+		386 391 4282 #asir_area
+		387 2346 4279 #tihama_al_yemen_area
+		390 2344 4281 #upper_yemen_area
+		388 2345 4280 #yemen_area
+		389 2343 4283 #hadramut_area
+		402 1099 4284 #mahra_area
+		401 2341 2342 #dhofar_area
+		2335 2336 2339 4275 #yamamah_area
+		392 4273 4274 #qasim_area
+		399 400 4286 #mascat_area
+		403 4285 4287 #oman_area
+		397 398 404 2333 #pirate_coast_area
+		394 395 396 2340 2347 #bahrain_area
+	}
+}
+
+constantinople = {
+	location = 326
+	color = { 126 203 120 }
+	outgoing = {
+		name = "ragusa"
+		path = {
+			149 1765 1766 138 137 
+		}
+		control = {
+		3254.500000 1324.500000
+		}
+	}
+	outgoing = {
+		name = "alexandria"
+		path = {
+			362 363 1316 1932 318 317 1320 
+		}
+		control = {
+			3230.000000 1294.000000 3264.000000 1243.000000 3283.500000 1193.500000
+		}
+	}
+	members = {
+		418 2307 4295 4296 4302 #north_kurdistan_area
+		330 331 2305 2306 #erzurum_area
+		332 2303 4310 4298 #dulkadir_area
+		329 1846 2300 4314 4315 #rum_area
+		325 328 2299 2304 #kastamonu_area
+		6115 6116 6117 327 2302 #cukurova_area
+		324 2301 4307 323 #karaman_area
+		326 4312 4313 #ankara_area
+		316 317 2296 #hudavendigar_area
+		318 319 2297 2298 4309 #aydin_area
+		322 1848 4308 4311 #germiyan_area
+	}
+}
+
+siberia = {
+	location = 476
+	inland = yes
+	color = { 139 138 160 }
+	outgoing = {
+		name = "kazan"
+		path = {
+		}
+		control = {
+			3837.000 1673.000 3686.000 1753.000
+		}
+	}
+	outgoing = {
+		name = "astrakhan"
+		path = {
+		}
+		control = {
+			3736.000 1488.000 3613.000 1503.000
+		}
+	}
+	members = {
+		459 2126 2368 #jetysuu_area
+		456 1969 2352 2361 #syr_darya_area
+		476 2351 2353 2358 2359 #kazakhstan_area
+		477 478 2355 2360 4685 #balchasj_area
+		1080 1078 1780 2427 2441 #ural_area
+		1074 1075 1076 2369 4692 #ishim_area
+		479 2354 2357 4686 4690 #aqmola_area
+		1071 2434 4687 4688 4689 #yrtesh_area
+		480 2428 2429 2433 #ob_area
+		1068 1070 #central_siberia_area
+		1069 1072 1073 2445 4691 #kara_area
+	}
+}
+
+kazan={
+	location = 1082
+	inland = yes
+	color = { 97 102 135 }
+	outgoing = {
+		name = "white_sea"
+		path = {
+		}
+		control = {
+			3527.000 1756.000 3419.000 1721.000
+		}
+	}
+	outgoing = {
+		name = "novgorod"
+		path = {
+		}
+		control = {
+			3489.000 1650.000 3418.000 1617.000
+		}
+	}
+	outgoing = {
+		name = "astrakhan"
+		path = {
+		}
+		control = {
+			3574.000 1613.000 3517.000 1547.000 3527.000 1477.000
+		}
+	}
+	members={
+		473 1081 2423 #samara_area
+		2421 4265 4267 #volga_area
+		475 1965 1966 2420 2444	#bashkiria_area
+		1077 1755 1963 1964 4129 #perm_area
+		305 1962 1972 4266 #kama_area
+		1082 2422 4264 #kazan_area
+		314 4262 4263 #vologda_area
+		306 1079 1083 1957 #galich_area
+	}
+}
+
+astrakhan = {
+	location = 464
+	color = { 193 179 127 }
+	inland = yes
+	outgoing = {
+		name = "crimea"
+		path = {
+		}
+		control = {
+			3479.000 1437.000 3419.000000 1458.000000 3394.500000 1453.500000 3380.000000 1430.500000 3372.500000 1414.500000 3345.000000 1397.500000
+		}
+	}
+	outgoing = {
+		name = "novgorod"
+		path = {
+		}
+		control = {
+			3486.000 1495.000 3414.000 1550.000 3365.000 1589.000
+		}
+	}
+	outgoing = {
+		name = "kiev"
+		path = {
+		}
+		control = {
+			3487.000 1457.000 3427.000 1502.000 3376.000 1508.000
+		}
+	}
+	members = {
+		464 466 6014 6013 2417 #astrakhan_area
+		6011 6012 2416 468 #stavropol_area
+		6015 303 2418 2419 #saratov_area
+		288 467 1971 2409 6016 #lower_don_area
+		302 304 2415 #tambov_area
+		469 474 2365 2367 #lower_yik_area
+		465 470 471 472 2366 #nogai_area
+		291 298 299 2408 #sloboda_ukraine_area
+	}
+}
+
+crimea = {
+	location = 1322
+	color = { 59 158 125 }
+	outgoing = {
+		name = "ragusa"
+		path = {
+			1322 2961 262 
+		}
+		control = {
+			3314.000000 1403.000000 
+		}	
+	}
+	outgoing = {
+		name = "kiev"
+		path = {
+			6006 1944
+		}
+		control = {
+		}	
+	}
+	outgoing = {
+		name = "pest"
+		path = {
+			4706 2998 4531 160 2746 156 1954 155 
+		}
+		control = {
+			3266.000000 1430.500000 3218.000000 1466.000000 3180.000000 1456.000000 3147.000000 1475.000000
+		}
+	}
+	members = {
+		268 1756 2405 4529 4530 #moldavia_area
+		282 6006 2406 6003 #odessa_area
+		283 2411 2412 6008 6007 #zaporizhia_area
+		1974 6004 6005 #yedisan_area
+		284 6001 6002 6213 #crimea_area
+		285 2410 2447 6000 #gazaria_area
+		286 287 2413 2414 6009 #azov_area
+	}
+}
+
+kiev = {
+	location = 280
+	inland = yes
+	color = { 240 167 130 }
+	outgoing = {
+		name = "novgorod"
+		path = {
+		}
+		control = {
+			3283.000 1588.000 3313.000 1618.000
+		}
+	}
+	outgoing = {
+		name = "krakow"
+		path = {
+		}
+		control = {
+			3189.000 1511.500 3139.000 1520.000
+		}
+	}
+	outgoing = {
+		name = "X_vilnius_trade_node"
+		path = {
+		}
+		control = {
+			3238.000 1570.000 3207.000 1580.000
+		}
+	}
+	outgoing = {
+		name = "white_sea"
+		path = {
+		}
+		control = {
+			3234.000 1598.500 3260.000 1632.000
+		}
+	}
+	members = {
+		1945 289 4543 #chernigov_area
+		290 2407 4542 #east_dniepr_area
+		280 1942 1944 4247 #west_dniepr_area
+		281 4540 1943 #podolia_volhynia_area
+		279 2962 4539 4538 #volhynia_area
+		278 1941 4545 #pripyat_area
+		261 1940 2424 2961 4541 #red_ruthenia_area
+		276 4115 4242 4544 #minsk_area
+	}
+}
+
+novgorod = {
+	location = 295
+	inland = yes
+	color = { 97 126 37 }
+	outgoing = {
+		name = "white_sea"
+		path = {
+		}
+		control = {
+			3370.000 1667.000
+		}
+	}
+	members = {
+		294 1752 4243 4248 4249 #tver_area
+		308 1753 4117 4250 #yaroslavl_area
+		307 4147 4253 #vladimir_area
+		295 4251 4252 #moscow_area
+		301 1778 4255 #ryazan_area
+		296 300 4116 #oka_area
+		1754 1956 4254 #suzdal_area
+		293 297 4244 4245 #smolensk_area
+		292 771 4246 #white_ruthenia_area
+	}
+}
+
+
+amazonas_node = {
+	location = 2935
+	outgoing = {
+		name = "carribean_trade"
+		path = {
+			1529 1528 1576 1522 1520 1519 1517 1516 
+		}
+		control = {
+			2072.000000 888.000000 2013.000000 940.000000 2002.000000 1051.000000 1858.000000 1053.000000 1775.000000 1062.000000 1703.000000 1066.000000 1631.000000 1102.000000 
+		}
+	}
+	members = {
+		752 2886 2925 #piaui_area
+		749 2923 2924 2926 2927	#maranhao_area
+		748 2890 2928 2929 #grao_para_area
+		2889 2930 2933 2934 #amazon_area
+		747 2935 2938 #amapa_area
+		745 746 2937 #suriname_area
+		742 2804 2811 2931 4617 #upper_guyana_area
+		743 744 2803 #guyana_area
+	}
+}
+
+
+
+
+
+alexandria = {
+	location = 358
+	color = { 200 200 102 }
+	outgoing = {
+		name = "ragusa"
+		path = {
+			362 363 1316 1932 318 317 1320 
+		}
+		control = {
+			3254.500 1177.000 3255.500 1216.000 3237.000 1247.000 3220.500 1262.000 3209.000 1277.000 3208.000 1308.500 3211.000 1320.500 3217.000 1324.500 3224.000 1331.500 3228.000 1333.000 3240.000 1339.500
+		}
+	}
+	outgoing = {
+		name = "genua"
+		path = {
+		}
+		control = {
+			3232.000 1191.000 3194.000 1226.500 3097.500 1213.000 3024.500 1242.500 2998.500 1270.500 2979.500 1309.500 
+		}
+	}
+	outgoing = {
+		name = "tunis"
+		path = {
+		}
+		control = {
+			3226.000 1163.000 3198.000 1162.000 3156.000 1182.000 3121.000 1178.000 3035.000 1209.000 3003.000 1240.000 2989.500 1273.500 2950.000 1292.500
+		}
+	}
+	members = {
+		1230 1232 2324 2787 #red_sea_coast_area
+		1234 2322 6020 6030 #lower_nubia_area
+		1233 2318 4323 #al_wahat_area
+		360 1231 2319 4319 4320 #said_area
+		365 2315 2320 2321 364 #gulf_of_arabia_area
+		359 2317 4318 #vostani_area
+		361 2316 4316 4317 #bahari_area
+		358 362 363 #delta_area
+		6023 6024 6025 6026 #jaghbub_area
+		356 357 2325 2326 #cyrenaica_area
+		321 320 163 6121 #eastern_mediterrenean_islands_area
+	}
+}
+panama = {
+	location = 835
+	outgoing = {
+		name = "carribean_trade"
+		path = {
+			1515 1517 1516 
+		}
+		control = {
+			1586.000000 1044.000000 1607.000000 1125.000000 
+		}
+	}
+	members = {
+		822 2816 4605 2818 #colombian_amazonas_area
+		2812 2814 2815 4608 #western_llanos
+		825 832 4602 4603 #bogota_area
+		824 827 2817 4600 4607 #cordillera_occidental_area
+		828 829 2806 4599 4601 #coquivacoa_area
+		835 2664 2819 4595 4596 #panama_area
+		2663 836 4597 #costa_rica_area
+		838 2660 2661 4592 #nicaragua_area
+		840 2637 2662 4593 #honduras_area
+	}
+}
+
+carribean_trade = {
+	location = 1516
+	outgoing = {
+		name = "chesapeake_bay"
+		path = {
+			1524 1503 1502 1501 1500 
+		}
+		control = {
+			1649.000000 1207.000000 1619.000000 1236.000000 1604.000000 1280.000000 1606.000000 1312.000000 1587.000000 1389.000000 1635.000000 1447.000000 
+		}
+	}
+	outgoing = {
+		name = "bordeaux"
+		path = {
+			488 490 1526 1575 1583 1580 1567 1563 
+		}
+		control = {
+			1687.000000 1196.000000 1925.000000 1251.000000 2082.000000 1253.000000 2210.000000 1293.000000 2326.000000 1295.000000 2446.000000 1349.000000 
+		}
+	}
+	outgoing = {
+		name = "sevilla"
+		path = {
+			488 490 1526 1575 1583 1580 1567 1563 
+		}
+		control = {
+			1684.000000 1121.000000 1844.000000 1108.000000 1899.000000 1143.000000 2019.000000 1171.000000 2253.000000 1245.000000 2391.000000 1282.000000 2456.000000 1325.000000 
+		}
+	}
+	members = {
+		927 928 2534 #north_florida_area
+		926 2535 2536 4626 4625 #florida_area
+		482 483 #lucayan_area
+		484 485 4622 4623 4624 #cuba_area
+		486 2654 2655 2656 #east_cuba_area
+		487 491 492 493 #greater_antilles_area
+		488 489 4618 4619 #hispaniola_area
+		490 2658 2659 4620 4621 #dominica_area
+		494 495 496 1881 497 #leeward_islands_area
+		498 499 500 501 502 #windward_islands_area
+		741 831 2808 4612 4616 #venezuela_area
+		2805 2809 2939 4615 #eastern_llanos
+		834 2810 2813 4613 4614 #central_llanos_area
+		830 2807 4609 4610 4611 #maracaibo_area
+	}
+}
+
+genua = {
+	location = 1303
+	color = { 232 36 39 }
+	outgoing = {
+		name = "sevilla"
+		path = {
+		}
+		control = {
+			2949.500 1349.000 2912.500 1342.000 2850.500 1331.000 2819.000 1314.000 2781.000 1258.000 
+		}
+	}
+	outgoing = {
+		name = "tunis"
+		path = {
+		}
+		control = {
+			2960.500 1306.500 2904.000 1296.000
+		}
+	}
+	outgoing = {
+		name = "champagne"
+		path = {
+		}
+		control = { 
+			2956.500 1379.500 2915.500 1374.000 2892.500 1385.500 2882.000 1431.000 2864.000 1469.000
+		}
+	}
+	outgoing = {
+		name = "gc_south_germany_tradenode"
+		path = {
+		}
+		control = {
+			2969.500 1378.000 2942.500 1409.000 2944.000 1432.000 2943.000 1445.000 2945.000 1472.500
+		}
+	}
+	outgoing = {
+		name = "wien"
+		path = {
+		}
+		control = {
+			3021.000 1333.500 3045.500 1316.500 3049.500 1288.500 3055.500 1277.000 3067.000 1284.500 3081.500 1308.000 3099.500 1327.000 3055.500 1365.500 3028.000 1381.000 3008.000 1410.000 3033.000 1444.000 
+		}
+	}
+	outgoing = {
+		name = "pest"
+		path = {
+		}
+		control = {
+			2996.500 1303.000 3019.500 1292.500 3046.000 1291.500 3055.500 1271.000 3082.000 1296.500 3104.500 1332.000 3060.500 1373.000 3023.000 1404.500 3055.000 1438.000
+		}
+	}
+	outgoing = {
+		name = "ragusa"
+		path = {
+		}
+		control = {
+			2998.000 1279.500 3032.500 1257.000 3081.500 1261.000 3131.500 1259.000 3175.500 1246.500 3190.500 1260.500 3195.000 1269.500 3202.000 1276.500 3198.500 1288.500 3182.000 1300.500 3203.000 1318.000 3213.000 1323.000 3217.000 1324.500 3224.000 1331.500 3228.000 1333.000 3240.000 1339.500
+		}
+	}
+	members = {
+		104 1862 4740 6078 105 #lombardy_area
+		115 116 2978 2980 6047 #tuscany_area
+		121 2983 6060 6053 #naples_area
+		118 4731 6052 6051 2976 #lazio_area
+		122 1933 2985 4733 6126 #apulia_area
+		112 1774 4729 5779 6124 #venetia_area
+		4739 107 109 108 #po_valley_area
+		1875 4727 5783 103 #piedmont_area
+		101 102 2992 6046 #liguria_area
+		127 2986 4735 5780 #corsica_sardinia_area
+		124 126 2982 5776 #sicily_area
+		125 4736 4737 5775 6158 #western_sicily_area
+		119 120 6050 2977 6125 #central_italy_area
+		130 4738 5777 111 5778 #carinthia_area
+		5781 1247 5782  #corsica_area
+		106 113 114 4730 6045 #emilia_romagna_area
+		123 1934 2984 5786 #calabria_area
+		5785 2981 6075 2979 4728 #torino_area
+		117 6048 6049 #siena_area
+		211 214 2990 4557 #aragon_area
+		197 212 213 2987 2988 #catalonia_area
+		220 1750 4549 4550 6192 #valencia_area
+		333 4559 4560 #baleares_area
+		200 2753 4391 4695 196 #languedoc_area
+		201 202 2991 4696 #provence_area
+
+	}
+}
+
+tunis = {
+	location = 1301
+	color = { 110 66 12 }
+	outgoing = {
+		name = "sevilla"
+		path = {
+		}
+		control = {
+			2777.500 1247.500
+		}
+	}
+	members = {
+		347 1110 2470 #southern_morocco_area
+		348 2464 2466 4568 #sus_area
+		342 345 2469 4564 #western_morocco_area
+		343 344 2467 2468 #marrekesh_area
+		334 335 1751 4563 4561 #northern_morocco_area
+		346 349 2460 #tafilalt_area
+		2459 2462 2463 #hautes_plaines_area
+		339 340 1882 #kabylia_area
+		337 2461 338 #barbary_coast_area
+		336 2465 4562 #algiers_area
+		350 351 2458 #ouled_nail_area
+		352 2450 2456 2457 2472 #north_saharan_area
+		353 2453 2954 #djerba_area
+		341 2454 2455 2473 4566 #tunisia_area
+		354 2451 2452 355 #tripolitania_area
+		2448 2449 4567 5825 5826 #fezzan_area
+	}
+}
+
+gc_south_germany_tradenode = {
+	location = 1872
+	color = { 255 146 0 }
+	outgoing = {
+		name = "rheinland"
+		path = {
+		}
+		control = {
+			2943.500 1490.000 2929.000 1510.000 2933.000 1518.000
+		}
+	}
+	outgoing = {
+		name = "champagne"
+		path = {
+			165 192 4392 
+		}
+		control = {
+			2944.000 1482.000 2923.500 1458.000 2886.000 1462.000
+		}
+	}
+	outgoing = {
+		name = "wien"
+		path = {
+		}
+		control = {
+			2987.000 1477.000 3009.000 1474.000 
+		}
+	}
+	members = {
+		6171 1867 1871 4720 #romandie_area
+		165 6169 4721 6170 #bern_area
+		166 1869 1870 6174 6173 #switzerland_area
+		4722 1873 6176 6172 6175 #grisons_area
+		68 1868 1872 4710 #upper_swabia_area
+		70 4713 4712 #lower_swabia_area
+		72 74 4714 #upper_rhineland_area
+		75 1880 4765 #alsace_area
+		77 1761 4767 6206 #palatinate_area
+		4715 71 4711 #franconia_area
+	}
+}
+
+saxony = {
+	inland = yes
+	location = 266
+	color = { 36 182 69 }
+	outgoing = {
+		name="krakow"
+		path = {
+		}
+		control = {
+			3034.000 1526.000 3075.500 1544.500
+		}
+	}
+	outgoing = {
+		name = "rheinland"
+		path = {
+		}
+		control = {
+			3019.000 1543.000 2999.000 1547.000 2976.000 1532.500 
+		}
+	}
+	outgoing = {
+		name="pest"
+		path = {
+		}
+		control = {
+			3039.000 1521.000 3057.000 1508.000 3086.000 1513.000 
+		}
+	}
+	outgoing = {
+		name = "wien"
+		path = {
+		}
+		control = {
+			 3032.000 1503.000 3041.000 1491.500 3061.000 1494.000
+		}
+	}
+	members = {
+		267 1771 2967 6101 #erzgebirge_area
+		266 2968 6103 6102 4725 #bohemia_area
+		4724 6104 2970 6105 #hradecko_area
+		6106 265 4237 4726 #moravia_area
+		60 1763 4778 #lusatia_area
+		2966 6112 6111 4238 #silesia_area
+		6110 6109 6108 264 #breg_area
+		263 4723 6107 #opole_area
+	}
+}
+
+wien = {
+	location = 134
+	color = { 220 220 220 }
+	outgoing = {
+		name = "pest"
+		path = {
+		}
+		control = {
+			3074.000 1484.000
+		}
+	}
+	outgoing = {
+		name = "rheinland"
+		path = {
+		}
+		control = {	
+			3028.000 1487.000 2996.000 1499.500 2984.000 1508.000 2976.000 1515.500
+		}
+	}
+	members = {
+		1769 4751 129 #krain_area
+		73 110 1768 4758 #tirol_area
+		128 132 1863 4759 #inner_austria_area
+		133 6186 4761 #outer_austria_area
+		134 1770 4762 6182 6180 #austria_proper_area
+		76 4760 4709 64 #east_bavaria_area
+		65 4707 4708 6183 6185 #upper_bavaria_area
+		1757 2956 2957 6184 2955 #lower_bavaria_area
+	}
+}
+
+rheinland = {
+	location = 1876
+	inland = yes
+	color = { 114 171 184 }
+	outgoing = {
+		name = "lubeck"
+		path = {
+			1762 57 53 1857 45 
+		}
+		control = {
+			2954.000000 1549.000000 2966.000000 1562.000000 2962.000000 1579.000000 2972.000000 1591.500000 
+		}
+	}
+	outgoing = {
+		name = "champagne"
+		path = {
+		}
+		control = {
+			2919.000 1524.000 2908.000 1508.000 2900.000 1488.000
+		}
+	}
+	outgoing = {
+		name = "english_channel"
+		path = {
+		}
+		control = {
+			2911.500 1537.500 2903.000 1558.000 2887.000 1561.000 2882.000 1567.000
+		}
+	}
+	outgoing = {
+		name="krakow"
+		path = {
+		}
+		control = {
+			 2985.000 1560.000 3020.000 1573.000 3048.500 1579.000 3069.000 1563.500  3096.000 1549.000
+		}
+	}
+	members = { 
+		56 86 2973 69 2971 #north_westphalia_area
+		84 85 2975 6205 6204 #north_rhine_area
+		80 1760 1878 4768 #lower_rhineland_area
+		1876 78 4718 83 6207 #hesse_area
+		82 81 1762 6208 4774 #westphalia_area
+		57 1758 4773 2972 4775 #braunschweig_area
+		66 67 4717 79 #upper_franconia_area
+		63 2965 4743 4716 #thuringia_area
+		52 58 2964 4741 4742 #northern_saxony_area
+		59 61 4744 62 #south_saxony_area
+		51 1759 4748 4749 4786 #mittelmark_area
+		49 2969 4747 6179 6178 #neumark_area
+		6163 6162 50 2993 #berlin_area
+	}
+}
+
+pest = {
+	location = 153
+	color = { 172 95 81 }
+	outgoing = {
+		name = "krakow"
+		path = {
+		}
+		control = {
+			3122.000 1500.000 3129.000 1511.000
+		}
+	}
+	outgoing = {
+		name = "ragusa"
+		path = {
+			1831 3002 4755 4173 4126
+		}
+		control = {
+			3169.000000 1453.000000 3203.000000 1421.000000 3220.000000 1353.000000
+		}
+	}
+	members = {
+		131 1826 4752 1828 #croatia_area
+		152 4756 1767 4173 #slavonia_area
+		135 1864 4126 4240 6099 #transdanubia_area
+		155 1953 4125 6100 153 #alfold_area
+		154 162 1318 1772 4236 #slovakia_area
+		156 1951 4128 1954 #southern_transylvania_area
+		157 158 1952 4127 #transylvania_area
+	}
+}
+
+krakow = {
+	location = 262
+	color = { 114 70 103 }
+	outgoing = {
+		name = "baltic_sea"
+		path = {
+		}
+		control = {
+			3133.000 1558.000 3095.000 1580.000 3096.000 1606.000 3107.000 1642.000
+		}
+	}
+	outgoing = {
+		name = "lubeck"
+		path = {
+		}
+		control = {
+			3133.000 1558.000 3095.000 1580.000 3068.000 1612.000
+		}
+	}
+	outgoing = {
+		name = "X_vilnius_trade_node"
+		path = {
+		}
+		control = {
+			3158.000 1543.000 3175.000 1595.000
+		}
+	}
+	members = {
+		262 4527 2960 #malopolska_area
+		260 2959 259 #sandomierz_area
+		256 257 1938 4525 #mazovia_area
+		258 1939 4533 #central_poland_area
+		254 4526 255 2963 #wielkopolska_area
+		4523 1859 4524 4528 #kuyavia_area
+		2997 43 1841 #west_prussia_area
+		40 41 767 2958 42 #east_prussia_area
+	}
+}
+
+X_vilnius_trade_node = {
+	location = 272
+	color = { 183 176 194 }
+	outgoing = {
+		name = "white_sea"
+		path = {
+		}
+		control = {
+			3218.000 1652.000 3249.000 1685.500
+		}
+	}
+	outgoing = {
+		name = "baltic_sea"
+		path = {
+		}
+		control = {
+			3185.500 1668.000 3157.500 1684.500 3141.500 1684.500
+		}
+	}
+	members = {
+		272 770 4535 4536 #lithuania_area
+		270 271 1936 4534 #samogitia_area
+		269 277 1937 4537 #podlasie_area
+		36 1834 1842 #estonia_ingria_area
+		37 38 273 4241 #livonia_area
+		35 39 1935 #curonia_area
+	}
+}
+
+chesapeake_bay = {
+	location = 1500
+	color = { 193 26 14 }
+	outgoing = {
+		name = "st_lawrence"
+		path = {
+			965 963 969 2012 986 1490 
+		}
+		control = {
+			1652.000000 1564.000000 1650.000000 1588.000000 1672.000000 1621.000000 1690.000000 1656.000000 1754.000000 1702.000000 
+		}
+	}
+	outgoing = {
+		name = "english_channel"
+		path = {
+			1570 1572 1582 1568 1564 1563 
+		}
+		control = {
+			1738.000000 1507.000000 1853.000000 1376.000000 2056.000000 1373.000000 2207.000000 1463.000000 2628.000000 1499.000000 2743.000000 1513.000000 2823.000000 1532.000000 
+		}
+	}
+	outgoing = {
+		name = "bordeaux"
+		path = {
+			1570 1572 1582 1568 1564 1563 
+		}
+		control = {
+			1738.000000 1507.000000 1853.000000 1376.000000
+		}
+	}
+	members = {
+		970 2562 2564 #great_woods_area
+		966 968 2561 4874 #massachusetts_bay_area
+		967 2010 2560 #connecticut_valley_area
+		965 2558 2639 #new_york_area
+		956 957 962 2023 #delaware_valley_area
+		955 2556 2557 4876 #susquehanna_area
+		953 2553 2554 #maryland_area
+		950 952 2549 2550 4877 #chesapeake_area
+		949 2011 2548 2552 #great_valley_area
+		2544 2545 4878 #piedmont_north_america_area
+		937 938 2546 2547 481 #carolinas_area
+		932 2542 2543 #south_carolina_area
+		933 2541 4882 #south_carolina_piedmont_area
+		929 2537 2538 2539 4880 #american_georgia_area
+		930 931 2540 4881 #upper_american_georgia_area
+		935 936 2527 4879 #south_appalachia_area
+	}
+}
+
+st_lawrence = {
+	location = 1490
+	color = { 193 192 14 }
+	outgoing = {
+		name = "north_sea"
+		path = {
+			1493 1496 1497 1498 1478 1476 1282 1975 
+		}
+		control = {
+			1873.000000 1718.000000 1906.000000 1756.000000 1952.000000 1779.000000 2050.000000 1772.000000 2577.000000 1737.000000 2696.139893 1734.630005 2763.000000 1737.000000 2781.000000 1703.000000 
+		}
+	}
+	outgoing = {
+		name = "bordeaux"
+		path = {
+			1491 1494 1495 1565 1564 1479 1563 
+		}
+		control = {
+			1870.000000 1686.000000 1923.000000 1630.000000 2041.000000 1632.000000 2178.000000 1627.000000 2364.000000 1615.000000 2525.000000 1581.000000 
+		}
+	}
+	members = {
+		1104 1105 #greenland_area
+		980 981 2573 #newfoundland_area
+		997 2574 2575 #labrador_area
+		986 994 995 2582 2583 #notre_dame_mountains_area
+		996 2576 2577 2578 2579 #cote_nord_area
+		993 2584 4895 #lower_canada_area
+		990 2012 2580 4893 #trois_rivieres_area
+		987 2586 2587 #upper_canada_area
+		992 2581 4894 #laurentian_area
+		991 1001 1007 2015 2671 #upper_ontario_area
+		989 988 2585 2670 #huronia_area
+		4890 4892 4897 #ottawa_valley_area
+		998 999 1000 1003 1004 #james_bay_area
+		1002 2588 2589 2590 2591 #inner_ontario_area
+		1005 1006 1009 2592 2594 #hudson_bay_area
+		1008 1010 1011 2593 #manitoba_area
+		961 963 964 2559 4912 #hudson_valley_area
+		969 2563 4871 #south_iroquoisia_area
+		2013 2565 4873 #maine_area
+		971 2566 2567 #eastern_maine_area
+		2570 2571 4896 #st_john_valley_area
+		983 985 2572 #upper_acadia_area
+		982 984 2568 2569 4891 #lower_acadia_area
+	}
+}
+
+white_sea = {
+	location = 310
+	color = { 236 159 90 }
+	outgoing = {
+		name = "baltic_sea"
+		path = {
+		}
+		control = {
+			3262.000000 1736.000000 3194.000000 1730.000000 3156.000000 1720.000000
+		}
+	}
+	outgoing={
+		name="north_sea"
+		path={
+		}
+		control={
+			3306.000 1729.000 3385.000 1743.000 3484.000 1800.000 3434.000 1850.000 3412.000 1867.000 3453.000000 1897.000000 3447.000000 1948.000000 3339.000000 1992.000000 3187.000000 2034.000000 3076.000000 1993.000000 2987.000000 1944.000000 2942.000000 1864.000000 2862.000000 1790.000000 2868.000000 1711.000000 2847.000000 1660.000000 
+		}
+	}
+	members = {
+		274 275 1960 4148 #pskov_area
+		310 311 1959 2749 4260 #novgorod_area
+		33 34 1961 #karelia_area
+		32 309 4124 5037 #north_karelia
+		313 1776 1958 4258 5036 #pomor_area
+		1777 5035 5034 #laponia_area
+		312 4259 4261 #beloozero_area
+		1955 4122 4256 4257 5038 #arkhangelsk_area
+	}
+}
+
+north_sea = {
+	location = 1975
+	color = { 117 165 188 }
+	outgoing = {
+		name = "english_channel"
+		path = {
+			1270 236 
+		}
+		control = {
+			2851.000000 1611.000000 
+		}
+	}
+	outgoing = {
+		name = "lubeck"
+		path = {
+			1266 1267 1259 1258 45 
+		}
+		control = {
+			2923.500 1673.000 2955.000 1687.000 2978.500 1688.000 2983.000000 1670.000000 2979.000000 1645.000000 2974.000000 1637.000000 2979.000000 1627.000000 2976.000000 1618.000000 2974.000000 1612.000000 2981.000000 1606.000000 
+		}
+	}
+	outgoing = {
+		name = "baltic_sea"
+		path = {
+			1266 1267 1259 1258 45 
+		}
+		control = {
+			2893.000 1685.000 2955.000 1691.000 2970.500 1712.000 2976.000 1736.000 3045.000 1745.000 3085.000 1723.000
+		}
+	}
+	members = {
+		1978 1979 370 371 #subarctic_islands_area
+		250 252 369 4110 4363 #highlands_area
+		248 249 251 4361 4362 #lowlands_area
+		253 4364 4365 #kingdom_of_the_isles_area
+		372 4121 4380 #ulster_area
+		373 374 4120 4379 #leinster_area
+		375 376 4119 #connacht_area
+		4118 4377 4378 #munster_area
+		246 247 244 4375 #scottish_marches_area
+		23 24 2752 4145 5032 #western_norway
+		20 21 315 5039 5033 #northern_norway
+		17 4143 4144 5031 #eastern_norway
+		5030 5029 5028 10 22 #jemtland_area
+		245 4367 4368 4785 #yorkshire_area
+	}
+}
+
+baltic_sea = {
+	location = 1926
+	color = { 8 82 165 }
+	outgoing = {
+		name = "lubeck"
+		path = {
+			1255 1257 45 
+		}
+		control = {
+			3089.000000 1696.000000 3072.000000 1648.000000 3044.000000 1636.000000 3015.000000 1620.000000 2984.000000 1605.000000 
+		}
+	}
+	
+	members = {
+		31 29 5026 5025 5023 #inner_finland_area
+		28 30 5024 #nyland_area
+		9 5016 5017 5027 #soderland_area
+		5008 5011 5010 #smaland_area
+		6 26 1982 4165 #skaneland_area
+		2 3 25 5009 #gotaland_area
+		7 16 4163 4164 #vastra_gotaland_area
+		5 1985 5012 #svealand_area
+		1 1930 5014 5015 #ostra_svealand_area
+		11 18 4114 5018 #norrland_area
+		27 4123 19 5019 5020 #finland_area
+		4113 4152 5021 5022 4151 #bothnia_area
+		4 8 5013 #dalarna_area
+	}
+}
+
+lubeck = {
+	location = 45
+	color = { 190 70 70 }
+	outgoing = {
+		name = "english_channel"
+		path = {
+			1857 44 1268 1269 
+		}
+		control = {
+			2966.000000 1599.000000 2957.000000 1596.000000 2915.000000 1602.000000 2868.000000 1576.000000 
+		}
+	}
+	members = {
+		12 14 1981 1983 5004 #denmark_area
+		5007 5003 1984 4142 #jutland_area
+		5006 15 4149 #south_jutland_area
+		5005 13 1775 4141 6166 #holstein_area
+		6168 6167 6165 6164 45 #lubeck_area
+		44 53 1857 4772 #lower_saxony_area
+		46 2996 6161 6160 6159 #mecklenburg_area
+		54 55 1874 4771 #weser_area
+		47 2994 4745 1858 #vorpommern_area
+		48 2995 4746 6177 #hinter_pommern_area
+	}
+}
+
+ragusa = {
+	location = 151
+	end = yes
+	color = { 160 82 128 }
+	members = {
+		149 151 1764 4779 4705 #thrace_area
+		150 1765 2746 2750 4703 #bulgaria_area
+		4704 4706 159 #silistria_area
+		160 161 2998 4531 4532 #wallachia_area
+		164 2348 4700 6122 6123 #aegean_archipelago_area
+		146 3003 147 6120 #XMP_central_greece_area
+		142 144 4699 4698 #northern_greece_area
+		145 1773 4701 #morea_area
+		148 1853 3001 4702 4780 #macedonia_area
+		141 3000 4176 4239 4757 #serbia_area
+		138 1766 1827 #rascia_area
+		143 4174 4175 4750 #albania_area
+		139 140 1831 3002 4755 #bosnia_area
+		136 137 4753 4754 #east_adriatic_coast_area
+	}
+}
+
+sevilla = {
+	location = 1293
+	color = { 57 160 101 }
+	outgoing = {
+		name = "bordeaux"
+		path = {
+			1745
+		}
+		control = {
+			2718.000000 1276.000000 2746.000000 1320.000000 2739.500000 1387.500000
+		}
+	}
+	members = {
+		224 1749 4548 6194 #lower_andalucia_area
+		1748 225 6195 2754 #cordoba_area
+		222 223 226 4546 6193 #upper_andalucia_area
+		215 217 2755 4551 4789 #castille_area
+		219 221 2751 4547 6209 #toledo_area
+		207 1745 4552 1746 #asturias_area
+		206 4554 4555 4558 #galicia_area
+		208 216 4553 #leon_area
+		4788 218 1747 #extremadura_area
+		231 232 228 1851 4556 #beieras_area
+		227 229 230 4150 4787 #alentejo_area
+		366 367 368 4565 #macaronesia_area
+		209 210 2989 #basque_country
+	}
+}
+
+bordeaux = {
+	location = 1276
+	color = { 36 132 247 }
+	outgoing = {
+		name = "champagne"
+		path = {
+			1275 172 178 184 185 
+		}
+		control = {
+			2756.000000 1449.500000 2785.000000 1452.000000 2805.000000 1459.000000 2832.000000 1470.000000 
+		}
+	}
+	members = {
+		175 173 176 4694 6096 #pyrenees_area
+		190 195 199 4697 4777 #massif_central_area
+		174 6095 6094 #guyenne_area
+		180 4111 4386 4387 194 #poitou_area
+		6098 198 4112 #cahors_area
+		169 170 171 172 4384 #brittany_area
+		177 178 1879 6087 6086 #loire_area
+	}
+}
+
+champagne = {
+	location = 186
+	inland = yes
+	color = { 148 30 70}
+	outgoing = {
+		name = "english_channel"
+		path = {
+			181 1866 92 1744 1269 
+		}
+		control = {
+			2862.000000 1510.000000 2858.000000 1532.000000 2865.000000 1540.000000 2871.000000 1550.000000 
+		}
+	}
+	
+	members = {
+		167 168 4385 6082 6081 #normandy_area
+		184 179 4776 4389 #orleans_area
+		186 4390 182 6084 6083 #champagne_area
+		183 185 4388 6085 6088 #ile_de_france_area
+		191 1877 4392 6092 #west_burgundy_area
+		192 193 4764 6093 #bourgogne_area
+		187 188 189 4766 6091 #lorraine_area
+		94 6090 181 1866 93 #wallonia_area
+		203 204 205 4719 #savoy_dauphine_area
+	}
+}
+
+english_channel = {
+	location = 1269
+	end = yes
+	color = { 220 138 57 }
+	members = {
+		87 88 89 6089 1743 #picardy_area
+		96 97 98 4383 #holland_area
+		90 4769 91 6197 6196 #flanders_area
+		99 4381 6201 6203 #frisia_area
+		1931 4382 100 6202 #east_frisia_area
+		92 1744 6199 1865 #brabant_area
+		95 4770 1742 2974 6200 #north_brabant_area
+		239 240 4372 #west_midlands_area
+		243 1861 4376 #east_midlands_area
+		233 4130 4373 4374 6191 #wessex_area
+		235 236 4371 6189 234 #home_counties_area
+		6190 6188 237 #oxford_area
+		238 1860 4370 6187 #east_anglia_area
+		241 242 4366 4369 #wales_area
+	}
+}
