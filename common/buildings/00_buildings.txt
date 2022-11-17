@@ -254,17 +254,6 @@ fort_15th = {
 	on_built = {
 		###X###
 		X_on_province_owner_change_pmod_effect = yes
-		if = {
-			limit = { X_flatland_terrain_trigger = yes }
-			custom_tooltip = X_flatland_fort_bonus_tt
-			hidden_effect = {
-				add_province_modifier = {
-					name = X_flatland_fort_bonus_pmod
-					duration = -1
-					hidden = yes
-				}
-			}
-		}
 		#######
 		if = {
 			limit = {
@@ -304,12 +293,6 @@ fort_15th = {
 	on_destroyed = {
 		###X###
 		X_on_province_owner_change_pmod_effect = yes
-		hidden_effect = {
-			if = {
-				limit = { has_province_modifier = X_flatland_fort_bonus_pmod }
-				remove_province_modifier = X_flatland_fort_bonus_pmod
-			}
-		}
 		#######
 	}
 	on_obsolete = {
@@ -899,18 +882,6 @@ fort_16th = {
 	on_built = {
 		###X###
 		X_on_province_owner_change_pmod_effect = yes
- 
-		if = {
-			limit = { X_flatland_terrain_trigger = yes }
-			custom_tooltip = X_flatland_fort_bonus_tt
-			hidden_effect = {
-				add_province_modifier = {
-					name = X_flatland_fort_bonus_pmod
-					duration = -1
-					hidden = yes
-				}
-			}
-		}
 		#######
 		if = {
 			limit = {
@@ -950,13 +921,6 @@ fort_16th = {
 	on_destroyed = {
 		###X###
 		X_on_province_owner_change_pmod_effect = yes
- 
-		hidden_effect = {
-			if = {
-				limit = { has_province_modifier = X_flatland_fort_bonus_pmod }
-				remove_province_modifier = X_flatland_fort_bonus_pmod
-			}
-		}
 		#######
 	}
 	on_obsolete = {
@@ -1678,17 +1642,6 @@ fort_17th = {
 		###X###
 		X_on_province_owner_change_pmod_effect = yes
  
-		if = {
-			limit = { X_flatland_terrain_trigger = yes }
-			custom_tooltip = X_flatland_fort_bonus_tt
-			hidden_effect = {
-				add_province_modifier = {
-					name = X_flatland_fort_bonus_pmod
-					duration = -1
-					hidden = yes
-				}
-			}
-		}
 		#######
 		if = {
 			limit = {
@@ -1728,13 +1681,6 @@ fort_17th = {
 	on_destroyed = {
 		###X###
 		X_on_province_owner_change_pmod_effect = yes
- 
-		hidden_effect = {
-			if = {
-				limit = { has_province_modifier = X_flatland_fort_bonus_pmod }
-				remove_province_modifier = X_flatland_fort_bonus_pmod
-			}
-		}
 		#######
 	}
 	on_obsolete = {
@@ -2363,18 +2309,6 @@ fort_18th = {
 		on_built = {
 		###X###
 		X_on_province_owner_change_pmod_effect = yes
- 
-		if = {
-			limit = { X_flatland_terrain_trigger = yes }
-			custom_tooltip = X_flatland_fort_bonus_tt
-			hidden_effect = {
-				add_province_modifier = {
-					name = X_flatland_fort_bonus_pmod
-					duration = -1
-					hidden = yes
-				}
-			}
-		}
 		#######
 		if = {
 			limit = {
@@ -2414,13 +2348,6 @@ fort_18th = {
 	on_destroyed = {
 		###X###
 		X_on_province_owner_change_pmod_effect = yes
- 
-		hidden_effect = {
-			if = {
-				limit = { has_province_modifier = X_flatland_fort_bonus_pmod }
-				remove_province_modifier = X_flatland_fort_bonus_pmod
-			}
-		}
 		#######
 	}
 	on_obsolete = {
