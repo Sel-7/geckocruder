@@ -970,7 +970,7 @@ influence_ideas = {
 	category = DIP
 
 	bonus = {
-		development_cost_modifier = -0.05
+		development_cost_modifier = -0.025
 	}
 	diplomatic_influence = {
 		global_tax_income = 48
@@ -986,7 +986,6 @@ influence_ideas = {
 	inf_flexible_negotiation = {
 		center_of_trade_upgrade_cost = -0.25
 		expand_administration_cost = -0.15
-		allow_free_estate_privilege_revocation = yes
 	}
 	buffer_states = {
 		monarch_diplomatic_power = 1
@@ -996,7 +995,7 @@ influence_ideas = {
 		reduced_liberty_desire = 35
 		diplomatic_annexation_cost = -0.25
 		diplomatic_upkeep = 2
-		vassal_income = 0.15
+		vassal_income = 0.1
 	}
 	marcher_lords = {
 		vassal_forcelimit_bonus = 1
