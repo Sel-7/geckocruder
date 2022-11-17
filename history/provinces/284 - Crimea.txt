@@ -14,6 +14,14 @@ is_city = yes
 add_core = CRI
 fort_15th = yes #Qirq Yer
 
+add_province_triggered_modifier = conquest_of_qirim
+
+add_province_modifier = {
+	name = critical_province
+	duration = -1
+	hidden = yes
+}
+
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

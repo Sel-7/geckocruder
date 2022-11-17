@@ -16,6 +16,12 @@ hre = yes
 
 add_province_triggered_modifier = conquest_of_vienna
 
+add_province_modifier = {
+	name = critical_province
+	duration = -1
+	hidden = yes
+}
+
 discovered_by = KAZ
 discovered_by = CRI
 discovered_by = GOL

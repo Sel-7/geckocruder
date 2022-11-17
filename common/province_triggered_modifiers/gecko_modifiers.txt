@@ -113,14 +113,7 @@ caliph_of_cairo = {
 		normal_or_historical_nations = yes
 	}
 
-	trigger = {
-		owner = {
-			OR = {
-				religion = sunni
-				religion = shiite
-				religion = ibadi
-			}
-		}	
+	trigger = {	
 		controlled_by = ROOT	
 		}	
 
@@ -309,7 +302,6 @@ the_motherland_calls = {
 	}	
 
 	land_morale = 0.035
-	stability_cost_modifier = -0.10
 	
 	#Province scope
 	on_activation = {
@@ -594,7 +586,7 @@ conquest_of_constantinople = {
 	}
 
 
-	infantry_power = 0.005
+	infantry_power = 0.05
 	global_tax_modifier = 0.05
 	
 	#Province scope
@@ -694,6 +686,132 @@ conquest_of_paris = {
 	}
 
 	discipline = 0.02
+ 
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+conquest_of_warsawa = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+			NOT = { tag = POL }
+			mazovia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}	
+				
+		}
+		controlled_by = ROOT
+		
+	}
+
+	infantry_power = 0.05
+ 
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+conquest_of_qirim = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+			NOT = { tag = CRI }
+			crimea_area	= {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}	
+				
+		}
+		controlled_by = ROOT
+		
+	}
+
+	discipline = 0.02
+ 
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+conquest_of_toledo = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+			OR = {
+				NOT = { tag = CAS }
+				NOT = { tag = SPA }
+			}
+			toledo_area	= {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}	
+				
+		}
+		controlled_by = ROOT
+		
+	}
+
+	infantry_power = 0.05
+ 
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+
+	}
+}
+
+conquest_of_nurnberg = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+			upper_franconia_area	= {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}	
+				
+		}
+		controlled_by = ROOT
+		
+	}
+
+	all_power_cost = 0.015
  
 	
 	#Province scope
