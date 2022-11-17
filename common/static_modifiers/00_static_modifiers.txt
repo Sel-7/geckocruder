@@ -632,7 +632,7 @@ privateering = {
 
 negative_stability = {
 	global_unrest = -2					#-1% EXTRA revolt risk each step
-	#stability_cost_modifier = -0.25
+	stability_cost_modifier = -0.125
 	legitimacy = 1
 	interest = -1
 	migration_cost = 0.1
@@ -640,6 +640,7 @@ negative_stability = {
 	caravan_power = 0.05
 	global_trade_goods_size_modifier = 0.05
 	global_tax_modifier = 0.05
+
 }
 
 positive_mandate = {	# 100% strength at 100 mandate, 0% at 50 mandate
