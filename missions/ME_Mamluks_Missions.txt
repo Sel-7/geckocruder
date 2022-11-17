@@ -722,7 +722,7 @@ MAM_missions_2 = {
 			add_adm_power = -100
 			add_country_modifier = {
 				name = mamluks_domesticate_the_mamluks_modifier_1
-				duration = 18250
+				duration = 9125
 			}
 			add_country_modifier = {
 				name = mamluks_domesticate_the_mamluks_modifier_2
