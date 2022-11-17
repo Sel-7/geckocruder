@@ -3136,6 +3136,68 @@ ramparts = {
 		local_defensiveness = 0.15
 		local_defender_dice_roll_bonus = 1
 	}
+
+	
+	build_trigger = {
+		owner = {
+			if = {
+				limit = { is_subject = yes }
+				overlord = {
+					NOT = {
+						num_of_provinces_owned_or_owned_by_subjects_with = {
+							value = 3
+							OR = {
+								has_building = ramparts
+								has_construction = ramparts
+							}
+						}
+					}
+				}
+			}
+			else = {
+				NOT = {
+					num_of_provinces_owned_or_owned_by_subjects_with = {
+						value = 3
+						OR = {
+							has_building = ramparts
+							has_construction = ramparts
+						}
+					}
+				}
+			}
+		}
+		NOT = { province_id	= 151 }
+		NOT = { province_id = 6002 }
+	}
+	keep_trigger = {
+		owner = {
+			if = {
+				limit = { is_subject = yes }
+				overlord = {
+					NOT = {
+						num_of_provinces_owned_or_owned_by_subjects_with = {
+							value = 3
+							OR = {
+								has_building = ramparts
+								has_construction = ramparts
+							}
+						}
+					}
+				}
+			}
+			else = {
+				NOT = {
+					num_of_provinces_owned_or_owned_by_subjects_with = {
+						value = 3
+						OR = {
+							has_building = ramparts
+							has_construction = ramparts
+						}
+					}
+				}
+			}
+		}
+	}
 	
 	on_built = {
  
@@ -3147,7 +3209,6 @@ ramparts = {
 	}
 	onmap = no
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
-	one_per_country = yes
 	ai_will_do = {
 		factor = 0
 	}
