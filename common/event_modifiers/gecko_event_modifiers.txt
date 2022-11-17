@@ -403,3 +403,7 @@ subsaharan_buildings = {
 local_investment = {
 	local_development_cost = -0.025
 }	
+
+critical_province = {
+	local_warscore_cost_modifier = 0.15
+}
