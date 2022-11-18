@@ -3307,6 +3307,7 @@ estate_burghers_patronage_of_the_arts = {
 			add_prestige = 30
 		}
 	}
+	cooldown_years = 2.5
 	ai_will_do = {
 		factor = 100
 	}
@@ -6047,6 +6048,7 @@ estate_burghers_exclusive_trade_rights = {
 
 	benefits = {
 	}
+	cooldown_years = 2.5
 	ai_will_do = {
 		factor = 0
 	}
