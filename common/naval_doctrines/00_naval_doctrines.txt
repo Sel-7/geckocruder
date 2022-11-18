@@ -51,15 +51,16 @@ ship_boarding =
 	button_gfx = 4
 }
 
-wooden_wall =
-{
+wooden_wall = {
 	can_select = {
 		is_primitive = no
 		culture_group = british
 	}
 
 	country_modifier = {
-		heavy_ship_power = 0.1
+		heavy_ship_power = 0.05
+		galley_power = 0.1
+		allowed_marine_fraction = 0.1
 	}
 
 	button_gfx = 5

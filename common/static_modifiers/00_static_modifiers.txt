@@ -1829,7 +1829,6 @@ hussars_regiment = {
 }
 marine_regiment = {
     shock_damage_received = -0.1
-    regiment_disembark_speed = 2 #requires a new country modifier
 }
 banner_regiment = {
 	discipline = 0.05
