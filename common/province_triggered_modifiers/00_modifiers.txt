@@ -40,7 +40,6 @@ non_catholic_rome = {
 	#}
 	
 	trigger = {
-		trigger = {
 			owner = {
 				NOT = { tag = TUR }
 				lazio_umbria_area = {
@@ -52,11 +51,10 @@ non_catholic_rome = {
 			controlled_by = ROOT
 			
 		}
-	}
 
 	prestige = 0.5
 	missionaries = 1
-	all_power_cost = 0.015
+	all_power_cost = -0.015
 	
 	#Province scope
 	on_activation = {
