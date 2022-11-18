@@ -636,6 +636,28 @@ Defense_of_the_Rus = {
 	war_taxes_cost_modifier = -1
 }
 
+defense_of_hungary = {
+	potential = {
+		tag = HUN
+		ROOT = {
+			ai = no
+		}
+		NOT = { is_year = 1500 }
+	}
+
+	trigger = {
+		defensive_war_with = TUR
+
+		land_maintenance = 1
+		army_size_percentage = 0.65
+	}
+
+	shock_damage_received = -0.075
+	land_morale = 0.05
+	defensiveness = 0.1
+
+}
+
 Ahead_of_time = {
 	potential = {
 		ROOT = {
@@ -701,3 +723,4 @@ POL_rawa_triggered_modifier = {
 	
 	land_maintenance_modifier = -0.05
 }
+
