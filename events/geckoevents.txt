@@ -1202,48 +1202,6 @@ picture = COURT_eventPicture
 	}
 }
 
-###revanchism#####
-country_event = {
-    id = gecko.25
-   title = gecko.25.t
-    desc = gecko.25.d
-picture = COURT_eventPicture
-
-   trigger = {
-     ROOT = {
-         ai = no
-		 }
-	  NOT = { has_country_modifier = gecko_recovery }
-	  has_country_modifier = just_lost_war_timer
-	  any_owned_province = {
-		is_looted = yes
-	  }
-	  OR = {
-		num_of_loans = 11
-		is_bankrupt = yes
-	}	
-	  revanchism = 50
-	  any_country = {
-						total_development = ROOT
-	  }
-   }
-	
-    mean_time_to_happen = {
-        days = 1
-    }
-	hidden = yes
-	immediate = {
-		add_country_modifier = {
-				name = gecko_recovery
-				duration = 3650
-				
-			}
-	}
-	option = {	
-	}
-}
-
-
 ###merc modifying event###
 country_event = {
 	id = gecko.28
@@ -1908,30 +1866,6 @@ picture = COURT_eventPicture
 	}
 }
 
-##remove revanchism#####
-country_event = {
-    id = gecko.36
-   title = gecko.36.t
-    desc = gecko.36.d
-picture = COURT_eventPicture
-
-   trigger = {
-		has_country_modifier = gecko_recovery
-		NOT = { revanchism = 1 }
-			
-	}		
-	hidden = yes	
-	mean_time_to_happen = {
-			days = 1
-	}
-
-	immediate = {
-		remove_country_modifier  = gecko_recovery
-
-	}
-	option = {	
-	}
-}
 
 #gc_mecca_agreement
 country_event = {
