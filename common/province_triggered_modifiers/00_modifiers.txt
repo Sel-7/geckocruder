@@ -40,17 +40,16 @@ non_catholic_rome = {
 	#}
 	
 	trigger = {
-			owner = {
-				NOT = { tag = TUR }
-				lazio_umbria_area = {
-					type = all
-					country_or_non_sovereign_subject_holds = ROOT
-				}	
-					
-			}
-			controlled_by = ROOT
-			
+		owner = {
+			NOT = { tag = TUR }
+			lazio_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}	
+				
 		}
+		controlled_by = ROOT
+	}
 
 	prestige = 0.5
 	missionaries = 1

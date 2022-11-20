@@ -382,14 +382,8 @@ conquest_of_tabriz = {
 	trigger = {
 		
 		owner = {
-				OR = {
-					religion = sunni
-					religion = shiite
-					religion = ibadi
-				}
 				NOT = { tag = ARL }
 				NOT = { tag = PER }
-				NOT = { tag = ISF }
 				tabriz_area = {
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT
@@ -530,7 +524,7 @@ conquest_of_herat = {
 		}		
 	}
 
-	infantry_power = 0.005
+	infantry_power = 0.05
  
 	
 	#Province scope
@@ -810,7 +804,7 @@ conquest_of_nurnberg = {
 		
 	}
 
-	all_power_cost = 0.015
+	all_power_cost = -0.015
  
 	
 	#Province scope
@@ -821,6 +815,38 @@ conquest_of_nurnberg = {
 	on_deactivation = {
 	
 	}
+}
+
+conquest_of_cairo = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	
+	#viewer = {
+	#}
+	
+	trigger = {
+			owner = {
+				NOT = { tag = MAM }	
+				NOT = { tag = EGY }
+			}
+			bahari_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			controlled_by = ROOT
+		}
+		infantry_power = 0.05
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
 }
 
 my_desert = {
