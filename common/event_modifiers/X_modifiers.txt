@@ -1,6 +1,11 @@
 ########################################
 # General Modifiers
 ########################################
+
+X_home_node_merchant_cmod = {
+	merchants = 1
+}
+
 ########################################
 # Estate Modifiers
 ########################################
@@ -901,47 +906,47 @@ X_lowlands_culture_full_control_cmod = {
 }
 #british
 X_british_culture_tier_1_cmod = {
-	naval_morale = 0.010
+	naval_morale = 0.004
 	heavy_ship_cost = -0.010
 }
 X_british_culture_tier_2_cmod = {
-	naval_morale = 0.020
+	naval_morale = 0.08
 	heavy_ship_cost = -0.020
 }
 X_british_culture_tier_3_cmod = {
-	naval_morale = 0.030
+	naval_morale = 0.012
 	heavy_ship_cost = -0.030
 }
 X_british_culture_tier_4_cmod = {
-	naval_morale = 0.040
+	naval_morale = 0.016
 	heavy_ship_cost = -0.040
 }
 X_british_culture_tier_5_cmod = {
-	naval_morale = 0.050
+	naval_morale = 0.02
 	heavy_ship_cost = -0.050
 }
 X_british_culture_tier_6_cmod = {
-	naval_morale = 0.060
+	naval_morale = 0.024
 	heavy_ship_cost = -0.060
 }
 X_british_culture_tier_7_cmod = {
-	naval_morale = 0.070
+	naval_morale = 0.028
 	heavy_ship_cost = -0.070
 }
 X_british_culture_tier_8_cmod = {
-	naval_morale = 0.080
+	naval_morale = 0.032
 	heavy_ship_cost = -0.080
 }
 X_british_culture_tier_9_cmod = {
-	naval_morale = 0.090
+	naval_morale = 0.036
 	heavy_ship_cost = -0.090
 }
 X_british_culture_tier_10_cmod = {
-	naval_morale = 0.100
+	naval_morale = 0.04
 	heavy_ship_cost = -0.100
 }
 X_british_culture_full_control_cmod = {
-	naval_morale = 0.125
+	naval_morale = 0.05
 	heavy_ship_cost = -0.125
 }
 #hindusthani
