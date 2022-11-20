@@ -2974,7 +2974,7 @@ centralize_reform = {
 				tooltip = less_than_15_provinces_on_same_continent
 				NOT = {
 					num_of_owned_provinces_with = {
-						same_continent = ROOT
+						owned_by = ROOT
 						value = 25
 					}
 				}
