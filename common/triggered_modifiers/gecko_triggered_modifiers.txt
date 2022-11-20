@@ -725,3 +725,15 @@ POL_rawa_triggered_modifier = {
 	land_maintenance_modifier = -0.05
 }
 
+supply_limit_at_peace = {
+	potential = {
+		is_at_war = no
+	}
+	trigger = {
+		ROOT = {
+			is_at_war = NO
+		}
+	}
+	global_supply_limit_modifier = 1.5
+}
+
